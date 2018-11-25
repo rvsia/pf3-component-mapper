@@ -4,7 +4,7 @@ import { FormControl, HelpBlock, Checkbox, Radio as PfRadio, Col, FormGroup } fr
 import ReactSelect from 'react-select';
 import { componentTypes } from '@data-driven-forms/react-form-renderer';
 import { validationError } from './helpers';
-// import MultipleChoiceList from './multiple-choice-list';
+import MultipleChoiceList from './multiple-choice-list';
 import customStyles from './select-styles';
 
 const selectValue = option => option.sort((a, b) => a.label.localeCompare(b.label, 'en', { sensitivity: 'base' })).map(item => item.value);
@@ -75,10 +75,10 @@ const FinalFormField = ({
   return (
     <FormGroup validationState={ invalid ? 'error' : null }>
       { label &&
-          <Col md={ 2 } componentClass="label" className="control-label">
+          <Col md={ hideLabel ? 0 : 2 } componentClass="label" className="control-label">
             { !hideLabel && label }
           </Col> }
-      <Col md={ 10 }>
+      <Col md={ !label ? 12 : 10 }>
         { selectComponent({ ...rest, invalid, label })() }
         { description && <HelpBlock style={{ color: '#767676' }}>{ description }</HelpBlock> }
         { renderHelperText(invalid && meta.error, helperText) }

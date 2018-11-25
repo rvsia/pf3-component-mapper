@@ -4,7 +4,7 @@ import ReactDOM from "react-dom";
 import FormRenderer from '@data-driven-forms/react-form-renderer';
 import { Grid, Row } from 'patternfly-react';
 import { formFieldsMapper, layoutMapper } from '../src'
-import { schema, uiSchema, conditionalSchema } from './demo-schemas/widget-schema';
+import { schema, uiSchema, conditionalSchema, arraySchema, uiArraySchema } from './demo-schemas/widget-schema';
 import miqSchema from './demo-schemas/miq-schema'
 
 const App = () => (
@@ -14,10 +14,11 @@ const App = () => (
             <Row>
                 <FormRenderer
                     onSubmit={console.log}
-                    schemaType="miq"
+                    schemaType="mozilla"
                     formFieldsMapper={formFieldsMapper}
                     layoutMapper={layoutMapper}
-                    schema={miqSchema}
+                    schema={arraySchema}
+                    uiSchema={uiArraySchema}
                 />
             </Row>
         </Grid>
