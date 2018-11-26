@@ -1,4 +1,5 @@
 import React from 'react';
+import requiredLabel from './required-label';
 import { Checkbox, Col, FormGroup } from 'patternfly-react';
 import { composeValidators } from '@data-driven-forms/react-form-renderer';
 
@@ -18,7 +19,7 @@ const MultipleChoiceList = ({ validate, FieldProvider, ...props }) => (
       return (
         <FormGroup validationState={ showError ? 'error' : null }>
           <Col md={ 2 } componentClass="label" className="control-label">
-            { label }
+            { (isRequired ? requiredLabel(label) : label) }
           </Col>
           <Col md={ 10 }>
             { options.map(option =>

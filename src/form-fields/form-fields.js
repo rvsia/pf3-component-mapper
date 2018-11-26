@@ -6,6 +6,7 @@ import { componentTypes } from '@data-driven-forms/react-form-renderer';
 import { validationError } from './helpers';
 import MultipleChoiceList from './multiple-choice-list';
 import customStyles from './select-styles';
+import requiredLabel from './required-label';
 
 const selectValue = option => option.sort((a, b) => a.label.localeCompare(b.label, 'en', { sensitivity: 'base' })).map(item => item.value);
 
@@ -76,7 +77,7 @@ const FinalFormField = ({
     <FormGroup validationState={ invalid ? 'error' : null }>
       { label &&
           <Col md={ hideLabel ? 0 : 2 } componentClass="label" className="control-label">
-            { !hideLabel && label }
+            { !hideLabel && (rest.isRequired ? requiredLabel(label) : label) }
           </Col> }
       <Col md={ !label ? 12 : 10 }>
         { selectComponent({ ...rest, invalid, label })() }
