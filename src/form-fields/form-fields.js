@@ -6,6 +6,7 @@ import { componentTypes } from '@data-driven-forms/react-form-renderer';
 import { validationError } from './helpers';
 import MultipleChoiceList from './multiple-choice-list';
 import customStyles from './select-styles';
+import './react-select.scss';
 
 const selectValue = option => option.sort((a, b) => a.label.localeCompare(b.label, 'en', { sensitivity: 'base' })).map(item => item.value);
 
