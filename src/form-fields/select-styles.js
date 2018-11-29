@@ -38,6 +38,8 @@ const customStyles = {
   dropdownIndicator: provided => ({
     ...provided,
     color: 'rgb(77, 82, 88)',
+    padding: 0,
+    paddingRight: 8,
   }),
   container: provided => ({
     ...provided,
@@ -49,12 +51,9 @@ const customStyles = {
   }),
   singleValue: (provided, { selectProps: { isSearchable }}) => ({
     ...provided,
-    height: 25,
     minHeight: 20,
     'font-size': 12,
-    'line-height': isSearchable ? '1em' : '0.8em',
     marginLeft: 0,
-    top: '75%',
     fontWeight: '600',
     color: 'rgb(54, 54, 54)',
   }),
@@ -71,9 +70,8 @@ const customStyles = {
     border: 'none',
     transition: 'border-color ease-in-out .15s, box-shadow ease-in-out .15s',
     'box-shadow': '0 2px 3px rgba(3, 3, 3, 0.1)',
-    height: 26,
-    minHeight: 20,
-    padding: '2px 0',
+    padding: '1px 0',
+    minHeight: 'initial',
     'background-color': '#f1f1f1',
     color: '#4d5258',
     'background-image': 'linear-gradient(to bottom, #fafafa 0%, #ededed 100%)',
@@ -93,14 +91,16 @@ const customStyles = {
   multiValue: provided => ({
     ...provided,
     background: 'transparent',
-    marginRight: 0,
+    paddigTop: 0,
+    paddingBottom: 0,
+    paddingLeft: 0,
+    margin: 0,
     '&:nth-last-child(2)': {
       marginRight: 2,
     },
     '&:not(:first-child)': {
       '::before': {
         content: '",\\00a0"',
-        lineHeight: '2em',
         'font-size': 12,
         paddingLeft: 0,
         paddingRight: 0,
@@ -111,14 +111,15 @@ const customStyles = {
   }),
   multiValueRemove: () => ({
     display: 'none',
+    padding: 0,
   }),
   multiValueLabel: (provided, state) => ({
     ...provided,
-    height: 25,
-    minHeight: 20,
     'font-size': 12,
+    padding: 0,
     paddingLeft: 0,
-    paddingRight: 0,
+    marginTop: 0,
+    marginBottom: 0,
     fontWeight: '600',
     color: 'rgb(54, 54, 54)',
   }),
