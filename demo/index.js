@@ -14,11 +14,10 @@ const App = () => (
             <Row>
                 <FormRenderer
                     onSubmit={console.log}
-                    schemaType="mozilla"
+                    schemaType="miq"
                     formFieldsMapper={formFieldsMapper}
                     layoutMapper={layoutMapper}
-                    schema={arraySchema}
-                    uiSchema={uiArraySchema}
+                    schema={miqSchema}
                 />
             </Row>
         </Grid>
