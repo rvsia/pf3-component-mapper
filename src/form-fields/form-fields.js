@@ -111,7 +111,6 @@ const fieldMapper = type => ({
   [componentTypes.SELECT_COMPONENT]: FinalFormField,
   [componentTypes.TEXTAREA_FIELD]: FinalFormField,
   [componentTypes.TEXT_FIELD]: FinalFormField,
-  [componentTypes.SUB_FORM]: props => <div>Sub form</div>,
 })[type];
 
 const FieldInterface = ({
@@ -141,7 +140,6 @@ FieldInterface.propTypes = {
     componentTypes.SELECT_COMPONENT,
     componentTypes.TEXTAREA_FIELD,
     componentTypes.TEXT_FIELD,
-    componentTypes.SUB_FORM,
   ]).isRequired,
   id: PropTypes.string,
   name: PropTypes.string.isRequired,
@@ -154,4 +152,3 @@ export const TextareaField = props => <FieldInterface { ...props } name={ props.
 export const SelectField = props => <FieldInterface { ...props } name={ props.input.name } componentType={ componentTypes.SELECT_COMPONENT } />;
 export const Radio = props => <FieldInterface { ...props } name={ props.input.name } componentType={ componentTypes.RADIO } />;
 export const CheckboxGroup = props => <FieldInterface { ...props } name={ props.input.name } componentType={ componentTypes.CHECKBOX } />;
-export const SubForm = props => <FieldInterface { ...props } componentType={ componentTypes.SUB_FORM } />;
