@@ -5,7 +5,8 @@ import FormRenderer from '@data-driven-forms/react-form-renderer';
 import { Grid, Row } from 'patternfly-react';
 import { formFieldsMapper, layoutMapper } from '../src'
 import { schema, uiSchema, conditionalSchema, arraySchema, uiArraySchema } from './demo-schemas/widget-schema';
-import miqSchema from './demo-schemas/miq-schema'
+import miqSchema from './demo-schemas/miq-schema';
+import sandbox from './demo-schemas/sandbox';
 
 const App = () => (
     <div>
