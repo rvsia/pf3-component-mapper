@@ -1,0 +1,1024 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormFields should render Switch correctly 1`] = `
+<SwitchField
+  FieldProvider={[Function]}
+  dataType="someDataType"
+  id="someIdKey"
+  input={
+    Object {
+      "name": "Name of the field",
+      "value": "",
+    }
+  }
+  meta={
+    Object {
+      "error": false,
+      "touched": false,
+    }
+  }
+>
+  <FieldProvider
+    dataType="someDataType"
+    id="someIdKey"
+    input={
+      Object {
+        "name": "Name of the field",
+        "value": "",
+      }
+    }
+    meta={
+      Object {
+        "error": false,
+        "touched": false,
+      }
+    }
+    render={[Function]}
+  >
+    <div>
+      <FieldInterface
+        componentType="switch-field"
+        dataType="someDataType"
+        id="someIdKey"
+        input={
+          Object {
+            "name": "Name of the field",
+            "value": "",
+          }
+        }
+        meta={
+          Object {
+            "error": false,
+            "touched": false,
+          }
+        }
+        name="Name of the field"
+      >
+        <FormGroup
+          bsClass="form-group"
+          validationState={null}
+        >
+          <div
+            className="form-group"
+          >
+            <Col
+              bsClass="col"
+              componentClass="div"
+              md={12}
+            >
+              <div
+                className="col-md-12"
+              >
+                <Switch
+                  animate={true}
+                  baseClass="bootstrap-switch"
+                  bsSize={null}
+                  defaultValue={true}
+                  disabled={false}
+                  handleWidth="auto"
+                  id="someIdKey"
+                  inverse={false}
+                  labelText=" "
+                  labelWidth="auto"
+                  name="Name of the field"
+                  offColor="default"
+                  offText="OFF"
+                  onChange={[Function]}
+                  onColor="primary"
+                  onText="ON"
+                  readonly={false}
+                  tristate={false}
+                  value={false}
+                  wrapperClass="wrapper"
+                >
+                  <div
+                    className="bootstrap-switch wrapper bootstrap-switch-off bootstrap-switch-someIdKey"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    style={
+                      Object {
+                        "width": "auto",
+                      }
+                    }
+                    tabIndex="0"
+                  >
+                    <div
+                      className="bootstrap-switch-container"
+                      style={
+                        Object {
+                          "marginLeft": -0,
+                          "width": "auto",
+                        }
+                      }
+                    >
+                      <span
+                        className="bootstrap-switch-handle-on bootstrap-switch-primary"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "width": 0,
+                          }
+                        }
+                      >
+                        ON
+                      </span>
+                      <span
+                        className="bootstrap-switch-label"
+                        onMouseDown={[Function]}
+                        onMouseLeave={[Function]}
+                        onMouseMove={[Function]}
+                        onMouseUp={[Function]}
+                        onTouchEnd={[Function]}
+                        onTouchMove={[Function]}
+                        onTouchStart={[Function]}
+                        style={
+                          Object {
+                            "width": 0,
+                          }
+                        }
+                      >
+                         
+                      </span>
+                      <span
+                        className="bootstrap-switch-handle-off bootstrap-switch-default"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "width": 0,
+                          }
+                        }
+                      >
+                        OFF
+                      </span>
+                    </div>
+                  </div>
+                </Switch>
+              </div>
+            </Col>
+          </div>
+        </FormGroup>
+      </FieldInterface>
+    </div>
+  </FieldProvider>
+</SwitchField>
+`;
+
+exports[`FormFields should render Switch with label correctly 1`] = `
+<SwitchField
+  FieldProvider={[Function]}
+  dataType="someDataType"
+  id="someIdKey"
+  input={
+    Object {
+      "name": "Name of the field",
+      "value": "",
+    }
+  }
+  label="Label"
+  meta={
+    Object {
+      "error": false,
+      "touched": false,
+    }
+  }
+>
+  <FieldProvider
+    dataType="someDataType"
+    id="someIdKey"
+    input={
+      Object {
+        "name": "Name of the field",
+        "value": "",
+      }
+    }
+    label="Label"
+    meta={
+      Object {
+        "error": false,
+        "touched": false,
+      }
+    }
+    render={[Function]}
+  >
+    <div>
+      <FieldInterface
+        componentType="switch-field"
+        dataType="someDataType"
+        id="someIdKey"
+        input={
+          Object {
+            "name": "Name of the field",
+            "value": "",
+          }
+        }
+        label="Label"
+        meta={
+          Object {
+            "error": false,
+            "touched": false,
+          }
+        }
+        name="Name of the field"
+      >
+        <FormGroup
+          bsClass="form-group"
+          validationState={null}
+        >
+          <div
+            className="form-group"
+          >
+            <Col
+              bsClass="col"
+              className="control-label"
+              componentClass="label"
+              md={2}
+            >
+              <label
+                className="control-label col-md-2"
+              >
+                Label
+              </label>
+            </Col>
+            <Col
+              bsClass="col"
+              componentClass="div"
+              md={10}
+            >
+              <div
+                className="col-md-10"
+              >
+                <Switch
+                  animate={true}
+                  baseClass="bootstrap-switch"
+                  bsSize={null}
+                  defaultValue={true}
+                  disabled={false}
+                  handleWidth="auto"
+                  id="someIdKey"
+                  inverse={false}
+                  labelText="Label"
+                  labelWidth="auto"
+                  name="Name of the field"
+                  offColor="default"
+                  offText="OFF"
+                  onChange={[Function]}
+                  onColor="primary"
+                  onText="ON"
+                  readonly={false}
+                  tristate={false}
+                  value={false}
+                  wrapperClass="wrapper"
+                >
+                  <div
+                    className="bootstrap-switch wrapper bootstrap-switch-off bootstrap-switch-someIdKey"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    style={
+                      Object {
+                        "width": "auto",
+                      }
+                    }
+                    tabIndex="0"
+                  >
+                    <div
+                      className="bootstrap-switch-container"
+                      style={
+                        Object {
+                          "marginLeft": -0,
+                          "width": "auto",
+                        }
+                      }
+                    >
+                      <span
+                        className="bootstrap-switch-handle-on bootstrap-switch-primary"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "width": 0,
+                          }
+                        }
+                      >
+                        ON
+                      </span>
+                      <span
+                        className="bootstrap-switch-label"
+                        onMouseDown={[Function]}
+                        onMouseLeave={[Function]}
+                        onMouseMove={[Function]}
+                        onMouseUp={[Function]}
+                        onTouchEnd={[Function]}
+                        onTouchMove={[Function]}
+                        onTouchStart={[Function]}
+                        style={
+                          Object {
+                            "width": 0,
+                          }
+                        }
+                      >
+                        Label
+                      </span>
+                      <span
+                        className="bootstrap-switch-handle-off bootstrap-switch-default"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "width": 0,
+                          }
+                        }
+                      >
+                        OFF
+                      </span>
+                    </div>
+                  </div>
+                </Switch>
+              </div>
+            </Col>
+          </div>
+        </FormGroup>
+      </FieldInterface>
+    </div>
+  </FieldProvider>
+</SwitchField>
+`;
+
+exports[`FormFields should render Switch with onText (custom prop) correctly 1`] = `
+<SwitchField
+  FieldProvider={[Function]}
+  dataType="someDataType"
+  id="someIdKey"
+  input={
+    Object {
+      "name": "Name of the field",
+      "value": "",
+    }
+  }
+  meta={
+    Object {
+      "error": false,
+      "touched": false,
+    }
+  }
+  onText="OnText"
+>
+  <FieldProvider
+    dataType="someDataType"
+    id="someIdKey"
+    input={
+      Object {
+        "name": "Name of the field",
+        "value": "",
+      }
+    }
+    meta={
+      Object {
+        "error": false,
+        "touched": false,
+      }
+    }
+    onText="OnText"
+    render={[Function]}
+  >
+    <div>
+      <FieldInterface
+        componentType="switch-field"
+        dataType="someDataType"
+        id="someIdKey"
+        input={
+          Object {
+            "name": "Name of the field",
+            "value": "",
+          }
+        }
+        meta={
+          Object {
+            "error": false,
+            "touched": false,
+          }
+        }
+        name="Name of the field"
+        onText="OnText"
+      >
+        <FormGroup
+          bsClass="form-group"
+          validationState={null}
+        >
+          <div
+            className="form-group"
+          >
+            <Col
+              bsClass="col"
+              componentClass="div"
+              md={12}
+            >
+              <div
+                className="col-md-12"
+              >
+                <Switch
+                  animate={true}
+                  baseClass="bootstrap-switch"
+                  bsSize={null}
+                  defaultValue={true}
+                  disabled={false}
+                  handleWidth="auto"
+                  id="someIdKey"
+                  inverse={false}
+                  labelText=" "
+                  labelWidth="auto"
+                  name="Name of the field"
+                  offColor="default"
+                  offText="OFF"
+                  onChange={[Function]}
+                  onColor="primary"
+                  onText="OnText"
+                  readonly={false}
+                  tristate={false}
+                  value={false}
+                  wrapperClass="wrapper"
+                >
+                  <div
+                    className="bootstrap-switch wrapper bootstrap-switch-off bootstrap-switch-someIdKey"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    style={
+                      Object {
+                        "width": "auto",
+                      }
+                    }
+                    tabIndex="0"
+                  >
+                    <div
+                      className="bootstrap-switch-container"
+                      style={
+                        Object {
+                          "marginLeft": -0,
+                          "width": "auto",
+                        }
+                      }
+                    >
+                      <span
+                        className="bootstrap-switch-handle-on bootstrap-switch-primary"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "width": 0,
+                          }
+                        }
+                      >
+                        OnText
+                      </span>
+                      <span
+                        className="bootstrap-switch-label"
+                        onMouseDown={[Function]}
+                        onMouseLeave={[Function]}
+                        onMouseMove={[Function]}
+                        onMouseUp={[Function]}
+                        onTouchEnd={[Function]}
+                        onTouchMove={[Function]}
+                        onTouchStart={[Function]}
+                        style={
+                          Object {
+                            "width": 0,
+                          }
+                        }
+                      >
+                         
+                      </span>
+                      <span
+                        className="bootstrap-switch-handle-off bootstrap-switch-default"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "width": 0,
+                          }
+                        }
+                      >
+                        OFF
+                      </span>
+                    </div>
+                  </div>
+                </Switch>
+              </div>
+            </Col>
+          </div>
+        </FormGroup>
+      </FieldInterface>
+    </div>
+  </FieldProvider>
+</SwitchField>
+`;
+
+exports[`FormFields should render Switch with placeholder correctly 1`] = `
+<SwitchField
+  FieldProvider={[Function]}
+  dataType="someDataType"
+  id="someIdKey"
+  input={
+    Object {
+      "name": "Name of the field",
+      "value": "",
+    }
+  }
+  label="Placeholder"
+  meta={
+    Object {
+      "error": false,
+      "touched": false,
+    }
+  }
+>
+  <FieldProvider
+    dataType="someDataType"
+    id="someIdKey"
+    input={
+      Object {
+        "name": "Name of the field",
+        "value": "",
+      }
+    }
+    label="Placeholder"
+    meta={
+      Object {
+        "error": false,
+        "touched": false,
+      }
+    }
+    render={[Function]}
+  >
+    <div>
+      <FieldInterface
+        componentType="switch-field"
+        dataType="someDataType"
+        id="someIdKey"
+        input={
+          Object {
+            "name": "Name of the field",
+            "value": "",
+          }
+        }
+        label="Placeholder"
+        meta={
+          Object {
+            "error": false,
+            "touched": false,
+          }
+        }
+        name="Name of the field"
+      >
+        <FormGroup
+          bsClass="form-group"
+          validationState={null}
+        >
+          <div
+            className="form-group"
+          >
+            <Col
+              bsClass="col"
+              className="control-label"
+              componentClass="label"
+              md={2}
+            >
+              <label
+                className="control-label col-md-2"
+              >
+                Placeholder
+              </label>
+            </Col>
+            <Col
+              bsClass="col"
+              componentClass="div"
+              md={10}
+            >
+              <div
+                className="col-md-10"
+              >
+                <Switch
+                  animate={true}
+                  baseClass="bootstrap-switch"
+                  bsSize={null}
+                  defaultValue={true}
+                  disabled={false}
+                  handleWidth="auto"
+                  id="someIdKey"
+                  inverse={false}
+                  labelText="Placeholder"
+                  labelWidth="auto"
+                  name="Name of the field"
+                  offColor="default"
+                  offText="OFF"
+                  onChange={[Function]}
+                  onColor="primary"
+                  onText="ON"
+                  readonly={false}
+                  tristate={false}
+                  value={false}
+                  wrapperClass="wrapper"
+                >
+                  <div
+                    className="bootstrap-switch wrapper bootstrap-switch-off bootstrap-switch-someIdKey"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    style={
+                      Object {
+                        "width": "auto",
+                      }
+                    }
+                    tabIndex="0"
+                  >
+                    <div
+                      className="bootstrap-switch-container"
+                      style={
+                        Object {
+                          "marginLeft": -0,
+                          "width": "auto",
+                        }
+                      }
+                    >
+                      <span
+                        className="bootstrap-switch-handle-on bootstrap-switch-primary"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "width": 0,
+                          }
+                        }
+                      >
+                        ON
+                      </span>
+                      <span
+                        className="bootstrap-switch-label"
+                        onMouseDown={[Function]}
+                        onMouseLeave={[Function]}
+                        onMouseMove={[Function]}
+                        onMouseUp={[Function]}
+                        onTouchEnd={[Function]}
+                        onTouchMove={[Function]}
+                        onTouchStart={[Function]}
+                        style={
+                          Object {
+                            "width": 0,
+                          }
+                        }
+                      >
+                        Placeholder
+                      </span>
+                      <span
+                        className="bootstrap-switch-handle-off bootstrap-switch-default"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "width": 0,
+                          }
+                        }
+                      >
+                        OFF
+                      </span>
+                    </div>
+                  </div>
+                </Switch>
+              </div>
+            </Col>
+          </div>
+        </FormGroup>
+      </FieldInterface>
+    </div>
+  </FieldProvider>
+</SwitchField>
+`;
+
+exports[`FormFields should render disabled Switch correctly 1`] = `
+<SwitchField
+  FieldProvider={[Function]}
+  dataType="someDataType"
+  id="someIdKey"
+  input={
+    Object {
+      "name": "Name of the field",
+      "value": "",
+    }
+  }
+  isDisabled={true}
+  meta={
+    Object {
+      "error": false,
+      "touched": false,
+    }
+  }
+>
+  <FieldProvider
+    dataType="someDataType"
+    id="someIdKey"
+    input={
+      Object {
+        "name": "Name of the field",
+        "value": "",
+      }
+    }
+    isDisabled={true}
+    meta={
+      Object {
+        "error": false,
+        "touched": false,
+      }
+    }
+    render={[Function]}
+  >
+    <div>
+      <FieldInterface
+        componentType="switch-field"
+        dataType="someDataType"
+        id="someIdKey"
+        input={
+          Object {
+            "name": "Name of the field",
+            "value": "",
+          }
+        }
+        isDisabled={true}
+        meta={
+          Object {
+            "error": false,
+            "touched": false,
+          }
+        }
+        name="Name of the field"
+      >
+        <FormGroup
+          bsClass="form-group"
+          validationState={null}
+        >
+          <div
+            className="form-group"
+          >
+            <Col
+              bsClass="col"
+              componentClass="div"
+              md={12}
+            >
+              <div
+                className="col-md-12"
+              >
+                <Switch
+                  animate={true}
+                  baseClass="bootstrap-switch"
+                  bsSize={null}
+                  defaultValue={true}
+                  disabled={true}
+                  handleWidth="auto"
+                  id="someIdKey"
+                  inverse={false}
+                  labelText=" "
+                  labelWidth="auto"
+                  name="Name of the field"
+                  offColor="default"
+                  offText="OFF"
+                  onChange={[Function]}
+                  onColor="primary"
+                  onText="ON"
+                  readonly={false}
+                  tristate={false}
+                  value={false}
+                  wrapperClass="wrapper"
+                >
+                  <div
+                    className="bootstrap-switch wrapper bootstrap-switch-off bootstrap-switch-disabled bootstrap-switch-someIdKey"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    style={
+                      Object {
+                        "width": "auto",
+                      }
+                    }
+                    tabIndex="0"
+                  >
+                    <div
+                      className="bootstrap-switch-container"
+                      style={
+                        Object {
+                          "marginLeft": -0,
+                          "width": "auto",
+                        }
+                      }
+                    >
+                      <span
+                        className="bootstrap-switch-handle-on bootstrap-switch-primary"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "width": 0,
+                          }
+                        }
+                      >
+                        ON
+                      </span>
+                      <span
+                        className="bootstrap-switch-label"
+                        onMouseDown={[Function]}
+                        onMouseLeave={[Function]}
+                        onMouseMove={[Function]}
+                        onMouseUp={[Function]}
+                        onTouchEnd={[Function]}
+                        onTouchMove={[Function]}
+                        onTouchStart={[Function]}
+                        style={
+                          Object {
+                            "width": 0,
+                          }
+                        }
+                      >
+                         
+                      </span>
+                      <span
+                        className="bootstrap-switch-handle-off bootstrap-switch-default"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "width": 0,
+                          }
+                        }
+                      >
+                        OFF
+                      </span>
+                    </div>
+                  </div>
+                </Switch>
+              </div>
+            </Col>
+          </div>
+        </FormGroup>
+      </FieldInterface>
+    </div>
+  </FieldProvider>
+</SwitchField>
+`;
+
+exports[`FormFields should render readOnly Switch correctly 1`] = `
+<SwitchField
+  FieldProvider={[Function]}
+  dataType="someDataType"
+  id="someIdKey"
+  input={
+    Object {
+      "name": "Name of the field",
+      "value": "",
+    }
+  }
+  isReadOnly={true}
+  meta={
+    Object {
+      "error": false,
+      "touched": false,
+    }
+  }
+>
+  <FieldProvider
+    dataType="someDataType"
+    id="someIdKey"
+    input={
+      Object {
+        "name": "Name of the field",
+        "value": "",
+      }
+    }
+    isReadOnly={true}
+    meta={
+      Object {
+        "error": false,
+        "touched": false,
+      }
+    }
+    render={[Function]}
+  >
+    <div>
+      <FieldInterface
+        componentType="switch-field"
+        dataType="someDataType"
+        id="someIdKey"
+        input={
+          Object {
+            "name": "Name of the field",
+            "value": "",
+          }
+        }
+        isReadOnly={true}
+        meta={
+          Object {
+            "error": false,
+            "touched": false,
+          }
+        }
+        name="Name of the field"
+      >
+        <FormGroup
+          bsClass="form-group"
+          validationState={null}
+        >
+          <div
+            className="form-group"
+          >
+            <Col
+              bsClass="col"
+              componentClass="div"
+              md={12}
+            >
+              <div
+                className="col-md-12"
+              >
+                <Switch
+                  animate={true}
+                  baseClass="bootstrap-switch"
+                  bsSize={null}
+                  defaultValue={true}
+                  disabled={false}
+                  handleWidth="auto"
+                  id="someIdKey"
+                  inverse={false}
+                  labelText=" "
+                  labelWidth="auto"
+                  name="Name of the field"
+                  offColor="default"
+                  offText="OFF"
+                  onChange={[Function]}
+                  onColor="primary"
+                  onText="ON"
+                  readonly={true}
+                  tristate={false}
+                  value={false}
+                  wrapperClass="wrapper"
+                >
+                  <div
+                    className="bootstrap-switch wrapper bootstrap-switch-off bootstrap-switch-readonly bootstrap-switch-someIdKey"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    style={
+                      Object {
+                        "width": "auto",
+                      }
+                    }
+                    tabIndex="0"
+                  >
+                    <div
+                      className="bootstrap-switch-container"
+                      style={
+                        Object {
+                          "marginLeft": -0,
+                          "width": "auto",
+                        }
+                      }
+                    >
+                      <span
+                        className="bootstrap-switch-handle-on bootstrap-switch-primary"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "width": 0,
+                          }
+                        }
+                      >
+                        ON
+                      </span>
+                      <span
+                        className="bootstrap-switch-label"
+                        onMouseDown={[Function]}
+                        onMouseLeave={[Function]}
+                        onMouseMove={[Function]}
+                        onMouseUp={[Function]}
+                        onTouchEnd={[Function]}
+                        onTouchMove={[Function]}
+                        onTouchStart={[Function]}
+                        style={
+                          Object {
+                            "width": 0,
+                          }
+                        }
+                      >
+                         
+                      </span>
+                      <span
+                        className="bootstrap-switch-handle-off bootstrap-switch-default"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "width": 0,
+                          }
+                        }
+                      >
+                        OFF
+                      </span>
+                    </div>
+                  </div>
+                </Switch>
+              </div>
+            </Col>
+          </div>
+        </FormGroup>
+      </FieldInterface>
+    </div>
+  </FieldProvider>
+</SwitchField>
+`;

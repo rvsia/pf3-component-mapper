@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { FormControl, HelpBlock, Checkbox, Radio as PfRadio, Col, FormGroup } from 'patternfly-react';
+import { FormControl, HelpBlock, Checkbox, Radio as PfRadio, Col, FormGroup, Switch } from 'patternfly-react';
 import ReactSelect from 'react-select';
 import { componentTypes } from '@data-driven-forms/react-form-renderer';
 import { validationError } from './helpers';
@@ -57,6 +57,18 @@ const selectComponent = ({
         input.onChange(rest.multi ? selectValue(option) : option ? option.value : undefined) } // eslint-disable-line no-nested-ternary
       { ...rest }
     />),
+  [componentTypes.SWITCH]: () =>
+    <Switch
+      { ...rest }
+      { ...input }
+      value={ !!input.value }
+      readonly={ isReadOnly }
+      disabled={ isDisabled }
+      onChange={ (element, state) => input.onChange(state) }
+      labelText={ label || placeholder }
+    >
+      { label }
+    </Switch>,
 })[componentType];
 
 const renderHelperText = (error, helperText) => (error // eslint-disable-line no-nested-ternary
@@ -111,6 +123,7 @@ const fieldMapper = type => ({
   [componentTypes.SELECT_COMPONENT]: FinalFormField,
   [componentTypes.TEXTAREA_FIELD]: FinalFormField,
   [componentTypes.TEXT_FIELD]: FinalFormField,
+  [componentTypes.SWITCH]: FinalFormField,
 })[type];
 
 const FieldInterface = ({
@@ -140,6 +153,7 @@ FieldInterface.propTypes = {
     componentTypes.SELECT_COMPONENT,
     componentTypes.TEXTAREA_FIELD,
     componentTypes.TEXT_FIELD,
+    componentTypes.SWITCH,
   ]).isRequired,
   id: PropTypes.string,
   name: PropTypes.string.isRequired,
@@ -152,3 +166,5 @@ export const TextareaField = props => <FieldInterface { ...props } name={ props.
 export const SelectField = props => <FieldInterface { ...props } name={ props.input.name } componentType={ componentTypes.SELECT_COMPONENT } />;
 export const Radio = props => <FieldInterface { ...props } name={ props.input.name } componentType={ componentTypes.RADIO } />;
 export const CheckboxGroup = props => <FieldInterface { ...props } name={ props.input.name } componentType={ componentTypes.CHECKBOX } />;
+export const SwitchField = ({ FieldProvider, ...props }) =>
+  <FieldProvider { ...props } render={ props => <FieldInterface { ...props } name={ props.input.name } componentType={ componentTypes.SWITCH } /> }/>;
