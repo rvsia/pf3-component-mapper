@@ -257,7 +257,7 @@ exports[`FormFields should render Switch with label correctly 1`] = `
                   handleWidth="auto"
                   id="someIdKey"
                   inverse={false}
-                  labelText="Label"
+                  labelText=" "
                   labelWidth="auto"
                   name="Name of the field"
                   offColor="default"
@@ -317,7 +317,174 @@ exports[`FormFields should render Switch with label correctly 1`] = `
                           }
                         }
                       >
-                        Label
+                         
+                      </span>
+                      <span
+                        className="bootstrap-switch-handle-off bootstrap-switch-default"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "width": 0,
+                          }
+                        }
+                      >
+                        OFF
+                      </span>
+                    </div>
+                  </div>
+                </Switch>
+              </div>
+            </Col>
+          </div>
+        </FormGroup>
+      </FieldInterface>
+    </div>
+  </FieldProvider>
+</SwitchField>
+`;
+
+exports[`FormFields should render Switch with labelText correctly 1`] = `
+<SwitchField
+  FieldProvider={[Function]}
+  dataType="someDataType"
+  id="someIdKey"
+  input={
+    Object {
+      "name": "Name of the field",
+      "value": "",
+    }
+  }
+  labelText="labelText"
+  meta={
+    Object {
+      "error": false,
+      "touched": false,
+    }
+  }
+>
+  <FieldProvider
+    dataType="someDataType"
+    id="someIdKey"
+    input={
+      Object {
+        "name": "Name of the field",
+        "value": "",
+      }
+    }
+    labelText="labelText"
+    meta={
+      Object {
+        "error": false,
+        "touched": false,
+      }
+    }
+    render={[Function]}
+  >
+    <div>
+      <FieldInterface
+        componentType="switch-field"
+        dataType="someDataType"
+        id="someIdKey"
+        input={
+          Object {
+            "name": "Name of the field",
+            "value": "",
+          }
+        }
+        labelText="labelText"
+        meta={
+          Object {
+            "error": false,
+            "touched": false,
+          }
+        }
+        name="Name of the field"
+      >
+        <FormGroup
+          bsClass="form-group"
+          validationState={null}
+        >
+          <div
+            className="form-group"
+          >
+            <Col
+              bsClass="col"
+              componentClass="div"
+              md={12}
+            >
+              <div
+                className="col-md-12"
+              >
+                <Switch
+                  animate={true}
+                  baseClass="bootstrap-switch"
+                  bsSize={null}
+                  defaultValue={true}
+                  disabled={false}
+                  handleWidth="auto"
+                  id="someIdKey"
+                  inverse={false}
+                  labelText="labelText"
+                  labelWidth="auto"
+                  name="Name of the field"
+                  offColor="default"
+                  offText="OFF"
+                  onChange={[Function]}
+                  onColor="primary"
+                  onText="ON"
+                  readonly={false}
+                  tristate={false}
+                  value={false}
+                  wrapperClass="wrapper"
+                >
+                  <div
+                    className="bootstrap-switch wrapper bootstrap-switch-off bootstrap-switch-someIdKey"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    style={
+                      Object {
+                        "width": "auto",
+                      }
+                    }
+                    tabIndex="0"
+                  >
+                    <div
+                      className="bootstrap-switch-container"
+                      style={
+                        Object {
+                          "marginLeft": -0,
+                          "width": "auto",
+                        }
+                      }
+                    >
+                      <span
+                        className="bootstrap-switch-handle-on bootstrap-switch-primary"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "width": 0,
+                          }
+                        }
+                      >
+                        ON
+                      </span>
+                      <span
+                        className="bootstrap-switch-label"
+                        onMouseDown={[Function]}
+                        onMouseLeave={[Function]}
+                        onMouseMove={[Function]}
+                        onMouseUp={[Function]}
+                        onTouchEnd={[Function]}
+                        onTouchMove={[Function]}
+                        onTouchStart={[Function]}
+                        style={
+                          Object {
+                            "width": 0,
+                          }
+                        }
+                      >
+                        labelText
                       </span>
                       <span
                         className="bootstrap-switch-handle-off bootstrap-switch-default"
@@ -521,13 +688,13 @@ exports[`FormFields should render Switch with placeholder correctly 1`] = `
       "value": "",
     }
   }
-  label="Placeholder"
   meta={
     Object {
       "error": false,
       "touched": false,
     }
   }
+  placeholder="Placeholder"
 >
   <FieldProvider
     dataType="someDataType"
@@ -538,13 +705,13 @@ exports[`FormFields should render Switch with placeholder correctly 1`] = `
         "value": "",
       }
     }
-    label="Placeholder"
     meta={
       Object {
         "error": false,
         "touched": false,
       }
     }
+    placeholder="Placeholder"
     render={[Function]}
   >
     <div>
@@ -558,7 +725,6 @@ exports[`FormFields should render Switch with placeholder correctly 1`] = `
             "value": "",
           }
         }
-        label="Placeholder"
         meta={
           Object {
             "error": false,
@@ -566,6 +732,7 @@ exports[`FormFields should render Switch with placeholder correctly 1`] = `
           }
         }
         name="Name of the field"
+        placeholder="Placeholder"
       >
         <FormGroup
           bsClass="form-group"
@@ -576,23 +743,11 @@ exports[`FormFields should render Switch with placeholder correctly 1`] = `
           >
             <Col
               bsClass="col"
-              className="control-label"
-              componentClass="label"
-              md={2}
-            >
-              <label
-                className="control-label col-md-2"
-              >
-                Placeholder
-              </label>
-            </Col>
-            <Col
-              bsClass="col"
               componentClass="div"
-              md={10}
+              md={12}
             >
               <div
-                className="col-md-10"
+                className="col-md-12"
               >
                 <Switch
                   animate={true}
