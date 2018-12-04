@@ -23,6 +23,7 @@ const selectComponent = ({
   label,
   isSearchable,
   FieldProvider,
+  labelText,
   ...rest
 }) => ({
   [componentTypes.TEXT_FIELD]: () => <FormControl { ...input } disabled={ isDisabled } readOnly={ isReadOnly } { ...rest } />,
@@ -65,10 +66,8 @@ const selectComponent = ({
       readonly={ isReadOnly }
       disabled={ isDisabled }
       onChange={ (element, state) => input.onChange(state) }
-      labelText={ label || placeholder }
-    >
-      { label }
-    </Switch>,
+      labelText={ labelText || placeholder }
+    />,
 })[componentType];
 
 const renderHelperText = (error, helperText) => (error // eslint-disable-line no-nested-ternary

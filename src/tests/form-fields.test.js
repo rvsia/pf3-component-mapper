@@ -35,7 +35,14 @@ describe('FormFields', () => {
 
   it('should render Switch with placeholder correctly', () => {
     const wrapper = mount(
-      <SwitchField { ...props } label={ 'Placeholder' } FieldProvider={ FieldProvider } />
+      <SwitchField { ...props } placeholder={ 'Placeholder' } FieldProvider={ FieldProvider } />
+    );
+    expect(toJson(wrapper)).toMatchSnapshot();
+  });
+
+  it('should render Switch with labelText correctly', () => {
+    const wrapper = mount(
+      <SwitchField { ...props } labelText={ 'labelText' } FieldProvider={ FieldProvider } />
     );
     expect(toJson(wrapper)).toMatchSnapshot();
   });
