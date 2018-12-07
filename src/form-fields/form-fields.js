@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { FormControl, HelpBlock, Checkbox, Radio as PfRadio, Col, FormGroup, Switch } from 'patternfly-react';
+import { FormControl, HelpBlock, Checkbox, Radio as PfRadio, Col, FormGroup } from 'patternfly-react';
 import ReactSelect from 'react-select';
 import { componentTypes } from '@data-driven-forms/react-form-renderer';
 import { validationError } from './helpers';
 import MultipleChoiceList from './multiple-choice-list';
 import customStyles from './select-styles';
 import requiredLabel from './required-label';
+import Switch from './switch-field';
 import './react-select.scss';
 
 const selectValue = option => option.sort((a, b) => a.label.localeCompare(b.label, 'en', { sensitivity: 'base' })).map(item => item.value);
@@ -24,6 +25,7 @@ const selectComponent = ({
   isSearchable,
   FieldProvider,
   labelText,
+  formOptions,
   ...rest
 }) => ({
   [componentTypes.TEXT_FIELD]: () => <FormControl { ...input } disabled={ isDisabled } readOnly={ isReadOnly } { ...rest } />,
@@ -62,11 +64,10 @@ const selectComponent = ({
     <Switch
       { ...rest }
       { ...input }
-      value={ !!input.value }
-      readonly={ isReadOnly }
+      isReadOnly={ isReadOnly }
       disabled={ isDisabled }
-      onChange={ (element, state) => input.onChange(state) }
-      labelText={ labelText || placeholder }
+      checked={ input.value }
+      onChange={ ({ target: { checked }}) => input.onChange(checked) }
     />,
 })[componentType];
 

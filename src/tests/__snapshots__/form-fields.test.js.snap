@@ -70,89 +70,43 @@ exports[`FormFields should render Switch correctly 1`] = `
                 className="col-md-12"
               >
                 <Switch
-                  animate={true}
-                  baseClass="bootstrap-switch"
-                  bsSize={null}
-                  defaultValue={true}
-                  disabled={false}
-                  handleWidth="auto"
+                  checked=""
                   id="someIdKey"
-                  inverse={false}
-                  labelText=" "
-                  labelWidth="auto"
                   name="Name of the field"
-                  offColor="default"
                   offText="OFF"
                   onChange={[Function]}
-                  onColor="primary"
                   onText="ON"
-                  readonly={false}
-                  tristate={false}
-                  value={false}
-                  wrapperClass="wrapper"
+                  value=""
                 >
-                  <div
-                    className="bootstrap-switch wrapper bootstrap-switch-off bootstrap-switch-someIdKey"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onKeyDown={[Function]}
-                    style={
-                      Object {
-                        "width": "auto",
-                      }
-                    }
-                    tabIndex="0"
+                  <label
+                    className="pf3-switch"
                   >
-                    <div
-                      className="bootstrap-switch-container"
-                      style={
-                        Object {
-                          "marginLeft": -0,
-                          "width": "auto",
-                        }
-                      }
+                    <input
+                      checked=""
+                      id="someIdKey"
+                      name="Name of the field"
+                      onChange={[Function]}
+                      type="checkbox"
+                      value=""
+                    />
+                    <span
+                      className="pf3-switch-slider"
                     >
                       <span
-                        className="bootstrap-switch-handle-on bootstrap-switch-primary"
-                        onClick={[Function]}
-                        style={
-                          Object {
-                            "width": 0,
-                          }
-                        }
+                        className="on-text"
                       >
                         ON
                       </span>
                       <span
-                        className="bootstrap-switch-label"
-                        onMouseDown={[Function]}
-                        onMouseLeave={[Function]}
-                        onMouseMove={[Function]}
-                        onMouseUp={[Function]}
-                        onTouchEnd={[Function]}
-                        onTouchMove={[Function]}
-                        onTouchStart={[Function]}
-                        style={
-                          Object {
-                            "width": 0,
-                          }
-                        }
-                      >
-                         
-                      </span>
+                        className="divider"
+                      />
                       <span
-                        className="bootstrap-switch-handle-off bootstrap-switch-default"
-                        onClick={[Function]}
-                        style={
-                          Object {
-                            "width": 0,
-                          }
-                        }
+                        className="off-text"
                       >
                         OFF
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </label>
                 </Switch>
               </div>
             </Col>
@@ -249,89 +203,43 @@ exports[`FormFields should render Switch with label correctly 1`] = `
                 className="col-md-10"
               >
                 <Switch
-                  animate={true}
-                  baseClass="bootstrap-switch"
-                  bsSize={null}
-                  defaultValue={true}
-                  disabled={false}
-                  handleWidth="auto"
+                  checked=""
                   id="someIdKey"
-                  inverse={false}
-                  labelText=" "
-                  labelWidth="auto"
                   name="Name of the field"
-                  offColor="default"
                   offText="OFF"
                   onChange={[Function]}
-                  onColor="primary"
                   onText="ON"
-                  readonly={false}
-                  tristate={false}
-                  value={false}
-                  wrapperClass="wrapper"
+                  value=""
                 >
-                  <div
-                    className="bootstrap-switch wrapper bootstrap-switch-off bootstrap-switch-someIdKey"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onKeyDown={[Function]}
-                    style={
-                      Object {
-                        "width": "auto",
-                      }
-                    }
-                    tabIndex="0"
+                  <label
+                    className="pf3-switch"
                   >
-                    <div
-                      className="bootstrap-switch-container"
-                      style={
-                        Object {
-                          "marginLeft": -0,
-                          "width": "auto",
-                        }
-                      }
+                    <input
+                      checked=""
+                      id="someIdKey"
+                      name="Name of the field"
+                      onChange={[Function]}
+                      type="checkbox"
+                      value=""
+                    />
+                    <span
+                      className="pf3-switch-slider"
                     >
                       <span
-                        className="bootstrap-switch-handle-on bootstrap-switch-primary"
-                        onClick={[Function]}
-                        style={
-                          Object {
-                            "width": 0,
-                          }
-                        }
+                        className="on-text"
                       >
                         ON
                       </span>
                       <span
-                        className="bootstrap-switch-label"
-                        onMouseDown={[Function]}
-                        onMouseLeave={[Function]}
-                        onMouseMove={[Function]}
-                        onMouseUp={[Function]}
-                        onTouchEnd={[Function]}
-                        onTouchMove={[Function]}
-                        onTouchStart={[Function]}
-                        style={
-                          Object {
-                            "width": 0,
-                          }
-                        }
-                      >
-                         
-                      </span>
+                        className="divider"
+                      />
                       <span
-                        className="bootstrap-switch-handle-off bootstrap-switch-default"
-                        onClick={[Function]}
-                        style={
-                          Object {
-                            "width": 0,
-                          }
-                        }
+                        className="off-text"
                       >
                         OFF
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </label>
                 </Switch>
               </div>
             </Col>
@@ -416,89 +324,43 @@ exports[`FormFields should render Switch with labelText correctly 1`] = `
                 className="col-md-12"
               >
                 <Switch
-                  animate={true}
-                  baseClass="bootstrap-switch"
-                  bsSize={null}
-                  defaultValue={true}
-                  disabled={false}
-                  handleWidth="auto"
+                  checked=""
                   id="someIdKey"
-                  inverse={false}
-                  labelText="labelText"
-                  labelWidth="auto"
                   name="Name of the field"
-                  offColor="default"
                   offText="OFF"
                   onChange={[Function]}
-                  onColor="primary"
                   onText="ON"
-                  readonly={false}
-                  tristate={false}
-                  value={false}
-                  wrapperClass="wrapper"
+                  value=""
                 >
-                  <div
-                    className="bootstrap-switch wrapper bootstrap-switch-off bootstrap-switch-someIdKey"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onKeyDown={[Function]}
-                    style={
-                      Object {
-                        "width": "auto",
-                      }
-                    }
-                    tabIndex="0"
+                  <label
+                    className="pf3-switch"
                   >
-                    <div
-                      className="bootstrap-switch-container"
-                      style={
-                        Object {
-                          "marginLeft": -0,
-                          "width": "auto",
-                        }
-                      }
+                    <input
+                      checked=""
+                      id="someIdKey"
+                      name="Name of the field"
+                      onChange={[Function]}
+                      type="checkbox"
+                      value=""
+                    />
+                    <span
+                      className="pf3-switch-slider"
                     >
                       <span
-                        className="bootstrap-switch-handle-on bootstrap-switch-primary"
-                        onClick={[Function]}
-                        style={
-                          Object {
-                            "width": 0,
-                          }
-                        }
+                        className="on-text"
                       >
                         ON
                       </span>
                       <span
-                        className="bootstrap-switch-label"
-                        onMouseDown={[Function]}
-                        onMouseLeave={[Function]}
-                        onMouseMove={[Function]}
-                        onMouseUp={[Function]}
-                        onTouchEnd={[Function]}
-                        onTouchMove={[Function]}
-                        onTouchStart={[Function]}
-                        style={
-                          Object {
-                            "width": 0,
-                          }
-                        }
-                      >
-                        labelText
-                      </span>
+                        className="divider"
+                      />
                       <span
-                        className="bootstrap-switch-handle-off bootstrap-switch-default"
-                        onClick={[Function]}
-                        style={
-                          Object {
-                            "width": 0,
-                          }
-                        }
+                        className="off-text"
                       >
                         OFF
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </label>
                 </Switch>
               </div>
             </Col>
@@ -583,89 +445,43 @@ exports[`FormFields should render Switch with onText (custom prop) correctly 1`]
                 className="col-md-12"
               >
                 <Switch
-                  animate={true}
-                  baseClass="bootstrap-switch"
-                  bsSize={null}
-                  defaultValue={true}
-                  disabled={false}
-                  handleWidth="auto"
+                  checked=""
                   id="someIdKey"
-                  inverse={false}
-                  labelText=" "
-                  labelWidth="auto"
                   name="Name of the field"
-                  offColor="default"
                   offText="OFF"
                   onChange={[Function]}
-                  onColor="primary"
                   onText="OnText"
-                  readonly={false}
-                  tristate={false}
-                  value={false}
-                  wrapperClass="wrapper"
+                  value=""
                 >
-                  <div
-                    className="bootstrap-switch wrapper bootstrap-switch-off bootstrap-switch-someIdKey"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onKeyDown={[Function]}
-                    style={
-                      Object {
-                        "width": "auto",
-                      }
-                    }
-                    tabIndex="0"
+                  <label
+                    className="pf3-switch"
                   >
-                    <div
-                      className="bootstrap-switch-container"
-                      style={
-                        Object {
-                          "marginLeft": -0,
-                          "width": "auto",
-                        }
-                      }
+                    <input
+                      checked=""
+                      id="someIdKey"
+                      name="Name of the field"
+                      onChange={[Function]}
+                      type="checkbox"
+                      value=""
+                    />
+                    <span
+                      className="pf3-switch-slider"
                     >
                       <span
-                        className="bootstrap-switch-handle-on bootstrap-switch-primary"
-                        onClick={[Function]}
-                        style={
-                          Object {
-                            "width": 0,
-                          }
-                        }
+                        className="on-text"
                       >
                         OnText
                       </span>
                       <span
-                        className="bootstrap-switch-label"
-                        onMouseDown={[Function]}
-                        onMouseLeave={[Function]}
-                        onMouseMove={[Function]}
-                        onMouseUp={[Function]}
-                        onTouchEnd={[Function]}
-                        onTouchMove={[Function]}
-                        onTouchStart={[Function]}
-                        style={
-                          Object {
-                            "width": 0,
-                          }
-                        }
-                      >
-                         
-                      </span>
+                        className="divider"
+                      />
                       <span
-                        className="bootstrap-switch-handle-off bootstrap-switch-default"
-                        onClick={[Function]}
-                        style={
-                          Object {
-                            "width": 0,
-                          }
-                        }
+                        className="off-text"
                       >
                         OFF
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </label>
                 </Switch>
               </div>
             </Col>
@@ -750,89 +566,43 @@ exports[`FormFields should render Switch with placeholder correctly 1`] = `
                 className="col-md-12"
               >
                 <Switch
-                  animate={true}
-                  baseClass="bootstrap-switch"
-                  bsSize={null}
-                  defaultValue={true}
-                  disabled={false}
-                  handleWidth="auto"
+                  checked=""
                   id="someIdKey"
-                  inverse={false}
-                  labelText="Placeholder"
-                  labelWidth="auto"
                   name="Name of the field"
-                  offColor="default"
                   offText="OFF"
                   onChange={[Function]}
-                  onColor="primary"
                   onText="ON"
-                  readonly={false}
-                  tristate={false}
-                  value={false}
-                  wrapperClass="wrapper"
+                  value=""
                 >
-                  <div
-                    className="bootstrap-switch wrapper bootstrap-switch-off bootstrap-switch-someIdKey"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onKeyDown={[Function]}
-                    style={
-                      Object {
-                        "width": "auto",
-                      }
-                    }
-                    tabIndex="0"
+                  <label
+                    className="pf3-switch"
                   >
-                    <div
-                      className="bootstrap-switch-container"
-                      style={
-                        Object {
-                          "marginLeft": -0,
-                          "width": "auto",
-                        }
-                      }
+                    <input
+                      checked=""
+                      id="someIdKey"
+                      name="Name of the field"
+                      onChange={[Function]}
+                      type="checkbox"
+                      value=""
+                    />
+                    <span
+                      className="pf3-switch-slider"
                     >
                       <span
-                        className="bootstrap-switch-handle-on bootstrap-switch-primary"
-                        onClick={[Function]}
-                        style={
-                          Object {
-                            "width": 0,
-                          }
-                        }
+                        className="on-text"
                       >
                         ON
                       </span>
                       <span
-                        className="bootstrap-switch-label"
-                        onMouseDown={[Function]}
-                        onMouseLeave={[Function]}
-                        onMouseMove={[Function]}
-                        onMouseUp={[Function]}
-                        onTouchEnd={[Function]}
-                        onTouchMove={[Function]}
-                        onTouchStart={[Function]}
-                        style={
-                          Object {
-                            "width": 0,
-                          }
-                        }
-                      >
-                        Placeholder
-                      </span>
+                        className="divider"
+                      />
                       <span
-                        className="bootstrap-switch-handle-off bootstrap-switch-default"
-                        onClick={[Function]}
-                        style={
-                          Object {
-                            "width": 0,
-                          }
-                        }
+                        className="off-text"
                       >
                         OFF
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </label>
                 </Switch>
               </div>
             </Col>
@@ -917,89 +687,45 @@ exports[`FormFields should render disabled Switch correctly 1`] = `
                 className="col-md-12"
               >
                 <Switch
-                  animate={true}
-                  baseClass="bootstrap-switch"
-                  bsSize={null}
-                  defaultValue={true}
+                  checked=""
                   disabled={true}
-                  handleWidth="auto"
                   id="someIdKey"
-                  inverse={false}
-                  labelText=" "
-                  labelWidth="auto"
                   name="Name of the field"
-                  offColor="default"
                   offText="OFF"
                   onChange={[Function]}
-                  onColor="primary"
                   onText="ON"
-                  readonly={false}
-                  tristate={false}
-                  value={false}
-                  wrapperClass="wrapper"
+                  value=""
                 >
-                  <div
-                    className="bootstrap-switch wrapper bootstrap-switch-off bootstrap-switch-disabled bootstrap-switch-someIdKey"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onKeyDown={[Function]}
-                    style={
-                      Object {
-                        "width": "auto",
-                      }
-                    }
-                    tabIndex="0"
+                  <label
+                    className="pf3-switch disabled"
                   >
-                    <div
-                      className="bootstrap-switch-container"
-                      style={
-                        Object {
-                          "marginLeft": -0,
-                          "width": "auto",
-                        }
-                      }
+                    <input
+                      checked=""
+                      disabled={true}
+                      id="someIdKey"
+                      name="Name of the field"
+                      onChange={[Function]}
+                      type="checkbox"
+                      value=""
+                    />
+                    <span
+                      className="pf3-switch-slider"
                     >
                       <span
-                        className="bootstrap-switch-handle-on bootstrap-switch-primary"
-                        onClick={[Function]}
-                        style={
-                          Object {
-                            "width": 0,
-                          }
-                        }
+                        className="on-text"
                       >
                         ON
                       </span>
                       <span
-                        className="bootstrap-switch-label"
-                        onMouseDown={[Function]}
-                        onMouseLeave={[Function]}
-                        onMouseMove={[Function]}
-                        onMouseUp={[Function]}
-                        onTouchEnd={[Function]}
-                        onTouchMove={[Function]}
-                        onTouchStart={[Function]}
-                        style={
-                          Object {
-                            "width": 0,
-                          }
-                        }
-                      >
-                         
-                      </span>
+                        className="divider"
+                      />
                       <span
-                        className="bootstrap-switch-handle-off bootstrap-switch-default"
-                        onClick={[Function]}
-                        style={
-                          Object {
-                            "width": 0,
-                          }
-                        }
+                        className="off-text"
                       >
                         OFF
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </label>
                 </Switch>
               </div>
             </Col>
@@ -1084,89 +810,45 @@ exports[`FormFields should render readOnly Switch correctly 1`] = `
                 className="col-md-12"
               >
                 <Switch
-                  animate={true}
-                  baseClass="bootstrap-switch"
-                  bsSize={null}
-                  defaultValue={true}
-                  disabled={false}
-                  handleWidth="auto"
+                  checked=""
                   id="someIdKey"
-                  inverse={false}
-                  labelText=" "
-                  labelWidth="auto"
+                  isReadOnly={true}
                   name="Name of the field"
-                  offColor="default"
                   offText="OFF"
                   onChange={[Function]}
-                  onColor="primary"
                   onText="ON"
-                  readonly={true}
-                  tristate={false}
-                  value={false}
-                  wrapperClass="wrapper"
+                  value=""
                 >
-                  <div
-                    className="bootstrap-switch wrapper bootstrap-switch-off bootstrap-switch-readonly bootstrap-switch-someIdKey"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onKeyDown={[Function]}
-                    style={
-                      Object {
-                        "width": "auto",
-                      }
-                    }
-                    tabIndex="0"
+                  <label
+                    className="pf3-switch disabled"
                   >
-                    <div
-                      className="bootstrap-switch-container"
-                      style={
-                        Object {
-                          "marginLeft": -0,
-                          "width": "auto",
-                        }
-                      }
+                    <input
+                      checked=""
+                      disabled={true}
+                      id="someIdKey"
+                      name="Name of the field"
+                      onChange={[Function]}
+                      type="checkbox"
+                      value=""
+                    />
+                    <span
+                      className="pf3-switch-slider"
                     >
                       <span
-                        className="bootstrap-switch-handle-on bootstrap-switch-primary"
-                        onClick={[Function]}
-                        style={
-                          Object {
-                            "width": 0,
-                          }
-                        }
+                        className="on-text"
                       >
                         ON
                       </span>
                       <span
-                        className="bootstrap-switch-label"
-                        onMouseDown={[Function]}
-                        onMouseLeave={[Function]}
-                        onMouseMove={[Function]}
-                        onMouseUp={[Function]}
-                        onTouchEnd={[Function]}
-                        onTouchMove={[Function]}
-                        onTouchStart={[Function]}
-                        style={
-                          Object {
-                            "width": 0,
-                          }
-                        }
-                      >
-                         
-                      </span>
+                        className="divider"
+                      />
                       <span
-                        className="bootstrap-switch-handle-off bootstrap-switch-default"
-                        onClick={[Function]}
-                        style={
-                          Object {
-                            "width": 0,
-                          }
-                        }
+                        className="off-text"
                       >
                         OFF
                       </span>
-                    </div>
-                  </div>
+                    </span>
+                  </label>
                 </Switch>
               </div>
             </Col>
