@@ -5,13 +5,15 @@ const customStyles = {
   input: provided => ({
     ...provided,
     marginLeft: 0,
+    marginTop: 0,
+    marginBottom: 0,
+    paddingBottom: 0,
+    paddingTop: 0,
     fontWeight: '600',
     color: 'rgb(54, 54, 54)',
-    'line-height': '0.8em',
   }),
   placeholder: provided => ({
     ...provided,
-    lineHeight: 25,
     padding: '0 6px',
     color: 'rgb(77, 82, 88)',
     fontWeight: '600',
