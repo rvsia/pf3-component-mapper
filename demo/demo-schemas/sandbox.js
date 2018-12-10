@@ -25,11 +25,15 @@ const output = {
                 },
                 {
                   name: 'text_box_111',
-                  label: 'Text Box',
+                  label: 'Switch conditional',
                   title: 'Text Box',
                   component: components.SWITCH,
                   assignFieldProvider: true,
                   isDisabled: true,
+                  condition: {
+                    when: 'text_box_1',
+                    is: true,
+                  }
                 },
                 {
                   name: 'text_box_1111',

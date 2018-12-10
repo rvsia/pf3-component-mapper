@@ -7,22 +7,26 @@ import { formFieldsMapper, layoutMapper } from '../src'
 import { schema, uiSchema, conditionalSchema, arraySchema, uiArraySchema } from './demo-schemas/widget-schema';
 import miqSchema from './demo-schemas/miq-schema';
 import sandbox from './demo-schemas/sandbox';
+import Switch from "../src/form-fields/switch-field";
 
-const App = () => (
+class App extends React.Component {
+  render() {
+    return (
     <div>
-        <h1>Pf3 component mapper</h1>
-        <Grid>
-            <Row>
-                <FormRenderer
-                    onSubmit={console.log}
-                    schemaType="miq"
-                    formFieldsMapper={formFieldsMapper}
-                    layoutMapper={layoutMapper}
-                    schema={miqSchema}
-                />
-            </Row>
-        </Grid>
+      <h1>Pf3 component mapper</h1>
+      <Grid>
+        <Row>
+          <FormRenderer
+            onSubmit={console.log}
+            schemaType="default"
+            formFieldsMapper={formFieldsMapper}
+            layoutMapper={layoutMapper}
+            schema={sandbox}
+          />
+        </Row>
+      </Grid>
     </div>
-)
+  )}
+}
 
 ReactDOM.render(<App />, document.getElementById('root'));
