@@ -248,6 +248,7 @@ const output = {
                   title: 'Dropdown',
                   dataType: 'string',
                   component: components.SELECT_COMPONENT,
+                  isSearchable: true,
                   options: [
                     {
                       label: '<None>',
