@@ -1,6 +1,6 @@
 {
   "name": "@data-driven-forms/pf3-component-mapper",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Patternfly 3 component mapper",
   "main": "dist/index.js",
   "scripts": {
