@@ -80,6 +80,11 @@ exports[`FormFields should render Switch correctly 1`] = `
                 >
                   <label
                     className="pf3-switch"
+                    style={
+                      Object {
+                        "width": 80,
+                      }
+                    }
                   >
                     <input
                       checked=""
@@ -94,14 +99,27 @@ exports[`FormFields should render Switch correctly 1`] = `
                     >
                       <span
                         className="on-text"
+                        style={
+                          Object {
+                            "left": -46,
+                            "width": 46,
+                          }
+                        }
                       >
                         ON
                       </span>
                       <span
                         className="divider"
+                        style={Object {}}
                       />
                       <span
                         className="off-text"
+                        style={
+                          Object {
+                            "left": 34,
+                            "width": 46,
+                          }
+                        }
                       >
                         OFF
                       </span>
@@ -213,6 +231,11 @@ exports[`FormFields should render Switch with label correctly 1`] = `
                 >
                   <label
                     className="pf3-switch"
+                    style={
+                      Object {
+                        "width": 80,
+                      }
+                    }
                   >
                     <input
                       checked=""
@@ -227,14 +250,27 @@ exports[`FormFields should render Switch with label correctly 1`] = `
                     >
                       <span
                         className="on-text"
+                        style={
+                          Object {
+                            "left": -46,
+                            "width": 46,
+                          }
+                        }
                       >
                         ON
                       </span>
                       <span
                         className="divider"
+                        style={Object {}}
                       />
                       <span
                         className="off-text"
+                        style={
+                          Object {
+                            "left": 34,
+                            "width": 46,
+                          }
+                        }
                       >
                         OFF
                       </span>
@@ -334,6 +370,11 @@ exports[`FormFields should render Switch with labelText correctly 1`] = `
                 >
                   <label
                     className="pf3-switch"
+                    style={
+                      Object {
+                        "width": 80,
+                      }
+                    }
                   >
                     <input
                       checked=""
@@ -348,14 +389,27 @@ exports[`FormFields should render Switch with labelText correctly 1`] = `
                     >
                       <span
                         className="on-text"
+                        style={
+                          Object {
+                            "left": -46,
+                            "width": 46,
+                          }
+                        }
                       >
                         ON
                       </span>
                       <span
                         className="divider"
+                        style={Object {}}
                       />
                       <span
                         className="off-text"
+                        style={
+                          Object {
+                            "left": 34,
+                            "width": 46,
+                          }
+                        }
                       >
                         OFF
                       </span>
@@ -455,6 +509,11 @@ exports[`FormFields should render Switch with onText (custom prop) correctly 1`]
                 >
                   <label
                     className="pf3-switch"
+                    style={
+                      Object {
+                        "width": 80,
+                      }
+                    }
                   >
                     <input
                       checked=""
@@ -469,14 +528,27 @@ exports[`FormFields should render Switch with onText (custom prop) correctly 1`]
                     >
                       <span
                         className="on-text"
+                        style={
+                          Object {
+                            "left": -46,
+                            "width": 46,
+                          }
+                        }
                       >
                         OnText
                       </span>
                       <span
                         className="divider"
+                        style={Object {}}
                       />
                       <span
                         className="off-text"
+                        style={
+                          Object {
+                            "left": 34,
+                            "width": 46,
+                          }
+                        }
                       >
                         OFF
                       </span>
@@ -576,6 +648,11 @@ exports[`FormFields should render Switch with placeholder correctly 1`] = `
                 >
                   <label
                     className="pf3-switch"
+                    style={
+                      Object {
+                        "width": 80,
+                      }
+                    }
                   >
                     <input
                       checked=""
@@ -590,14 +667,27 @@ exports[`FormFields should render Switch with placeholder correctly 1`] = `
                     >
                       <span
                         className="on-text"
+                        style={
+                          Object {
+                            "left": -46,
+                            "width": 46,
+                          }
+                        }
                       >
                         ON
                       </span>
                       <span
                         className="divider"
+                        style={Object {}}
                       />
                       <span
                         className="off-text"
+                        style={
+                          Object {
+                            "left": 34,
+                            "width": 46,
+                          }
+                        }
                       >
                         OFF
                       </span>
@@ -698,6 +788,11 @@ exports[`FormFields should render disabled Switch correctly 1`] = `
                 >
                   <label
                     className="pf3-switch disabled"
+                    style={
+                      Object {
+                        "width": 80,
+                      }
+                    }
                   >
                     <input
                       checked=""
@@ -713,14 +808,27 @@ exports[`FormFields should render disabled Switch correctly 1`] = `
                     >
                       <span
                         className="on-text"
+                        style={
+                          Object {
+                            "left": -46,
+                            "width": 46,
+                          }
+                        }
                       >
                         ON
                       </span>
                       <span
                         className="divider"
+                        style={Object {}}
                       />
                       <span
                         className="off-text"
+                        style={
+                          Object {
+                            "left": 34,
+                            "width": 46,
+                          }
+                        }
                       >
                         OFF
                       </span>
@@ -821,6 +929,11 @@ exports[`FormFields should render readOnly Switch correctly 1`] = `
                 >
                   <label
                     className="pf3-switch disabled"
+                    style={
+                      Object {
+                        "width": 80,
+                      }
+                    }
                   >
                     <input
                       checked=""
@@ -836,14 +949,307 @@ exports[`FormFields should render readOnly Switch correctly 1`] = `
                     >
                       <span
                         className="on-text"
+                        style={
+                          Object {
+                            "left": -46,
+                            "width": 46,
+                          }
+                        }
                       >
                         ON
                       </span>
                       <span
                         className="divider"
+                        style={Object {}}
                       />
                       <span
                         className="off-text"
+                        style={
+                          Object {
+                            "left": 34,
+                            "width": 46,
+                          }
+                        }
+                      >
+                        OFF
+                      </span>
+                    </span>
+                  </label>
+                </Switch>
+              </div>
+            </Col>
+          </div>
+        </FormGroup>
+      </FieldInterface>
+    </div>
+  </FieldProvider>
+</SwitchField>
+`;
+
+exports[`FormFields should render sm Switch correctly 1`] = `
+<SwitchField
+  FieldProvider={[Function]}
+  bsSize="mn"
+  dataType="someDataType"
+  id="someIdKey"
+  input={
+    Object {
+      "name": "Name of the field",
+      "value": "",
+    }
+  }
+  meta={
+    Object {
+      "error": false,
+      "touched": false,
+    }
+  }
+>
+  <FieldProvider
+    bsSize="mn"
+    dataType="someDataType"
+    id="someIdKey"
+    input={
+      Object {
+        "name": "Name of the field",
+        "value": "",
+      }
+    }
+    meta={
+      Object {
+        "error": false,
+        "touched": false,
+      }
+    }
+    render={[Function]}
+  >
+    <div>
+      <FieldInterface
+        bsSize="mn"
+        componentType="switch-field"
+        dataType="someDataType"
+        id="someIdKey"
+        input={
+          Object {
+            "name": "Name of the field",
+            "value": "",
+          }
+        }
+        meta={
+          Object {
+            "error": false,
+            "touched": false,
+          }
+        }
+        name="Name of the field"
+      >
+        <FormGroup
+          bsClass="form-group"
+          validationState={null}
+        >
+          <div
+            className="form-group"
+          >
+            <Col
+              bsClass="col"
+              componentClass="div"
+              md={12}
+            >
+              <div
+                className="col-md-12"
+              >
+                <Switch
+                  bsSize="mn"
+                  checked=""
+                  id="someIdKey"
+                  name="Name of the field"
+                  offText="OFF"
+                  onChange={[Function]}
+                  onText="ON"
+                  value=""
+                >
+                  <label
+                    className="pf3-switch mini"
+                    style={
+                      Object {
+                        "width": 80,
+                      }
+                    }
+                  >
+                    <input
+                      checked=""
+                      id="someIdKey"
+                      name="Name of the field"
+                      onChange={[Function]}
+                      type="checkbox"
+                      value=""
+                    />
+                    <span
+                      className="pf3-switch-slider"
+                    >
+                      <span
+                        className="on-text"
+                        style={
+                          Object {
+                            "left": -46,
+                            "width": 46,
+                          }
+                        }
+                      >
+                        ON
+                      </span>
+                      <span
+                        className="divider"
+                        style={Object {}}
+                      />
+                      <span
+                        className="off-text"
+                        style={
+                          Object {
+                            "left": 34,
+                            "width": 46,
+                          }
+                        }
+                      >
+                        OFF
+                      </span>
+                    </span>
+                  </label>
+                </Switch>
+              </div>
+            </Col>
+          </div>
+        </FormGroup>
+      </FieldInterface>
+    </div>
+  </FieldProvider>
+</SwitchField>
+`;
+
+exports[`FormFields should render small Switch correctly 1`] = `
+<SwitchField
+  FieldProvider={[Function]}
+  bsSize="mini"
+  dataType="someDataType"
+  id="someIdKey"
+  input={
+    Object {
+      "name": "Name of the field",
+      "value": "",
+    }
+  }
+  meta={
+    Object {
+      "error": false,
+      "touched": false,
+    }
+  }
+>
+  <FieldProvider
+    bsSize="mini"
+    dataType="someDataType"
+    id="someIdKey"
+    input={
+      Object {
+        "name": "Name of the field",
+        "value": "",
+      }
+    }
+    meta={
+      Object {
+        "error": false,
+        "touched": false,
+      }
+    }
+    render={[Function]}
+  >
+    <div>
+      <FieldInterface
+        bsSize="mini"
+        componentType="switch-field"
+        dataType="someDataType"
+        id="someIdKey"
+        input={
+          Object {
+            "name": "Name of the field",
+            "value": "",
+          }
+        }
+        meta={
+          Object {
+            "error": false,
+            "touched": false,
+          }
+        }
+        name="Name of the field"
+      >
+        <FormGroup
+          bsClass="form-group"
+          validationState={null}
+        >
+          <div
+            className="form-group"
+          >
+            <Col
+              bsClass="col"
+              componentClass="div"
+              md={12}
+            >
+              <div
+                className="col-md-12"
+              >
+                <Switch
+                  bsSize="mini"
+                  checked=""
+                  id="someIdKey"
+                  name="Name of the field"
+                  offText="OFF"
+                  onChange={[Function]}
+                  onText="ON"
+                  value=""
+                >
+                  <label
+                    className="pf3-switch mini"
+                    style={
+                      Object {
+                        "width": 80,
+                      }
+                    }
+                  >
+                    <input
+                      checked=""
+                      id="someIdKey"
+                      name="Name of the field"
+                      onChange={[Function]}
+                      type="checkbox"
+                      value=""
+                    />
+                    <span
+                      className="pf3-switch-slider"
+                    >
+                      <span
+                        className="on-text"
+                        style={
+                          Object {
+                            "left": -46,
+                            "width": 46,
+                          }
+                        }
+                      >
+                        ON
+                      </span>
+                      <span
+                        className="divider"
+                        style={Object {}}
+                      />
+                      <span
+                        className="off-text"
+                        style={
+                          Object {
+                            "left": 34,
+                            "width": 46,
+                          }
+                        }
                       >
                         OFF
                       </span>

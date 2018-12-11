@@ -22,6 +22,9 @@ const output = {
                   title: 'Text Box',
                   component: components.SWITCH,
                   assignFieldProvider: true,
+                  bsSize: 'mn',
+                  onText: 'True',
+                  offText: 'False',
                 },
                 {
                   name: 'text_box_111',
@@ -50,7 +53,7 @@ const output = {
                   component: components.SWITCH,
                   assignFieldProvider: true,
                   placeholder: 'hello',
-                  onText: 'turned on',
+                  onText: 'turned onsssssssssssssssssss',
                   offText: 'turnedOff',
                 },
                 {
