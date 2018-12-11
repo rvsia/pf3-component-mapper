@@ -38,6 +38,17 @@ const devConfig = {
   plugins: [ htmlPlugin ],
 };
 
+const pfReact = {
+  commonjs: 'patternfly-react',
+  commonjs2: 'patternfly-react',
+  amd: 'patternfly-react',
+  root: 'patternfly-react',
+};
+
+const externals = {
+  'patternfly-react': pfReact,
+};
+
 const prodConfig = {
   mode: 'production',
   entry: './src/index.js',
@@ -47,6 +58,7 @@ const prodConfig = {
     libraryTarget: 'umd',
     filename: 'index.js',
   },
+  externals,
 };
 
 const vendorConfig = {
