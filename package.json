@@ -36,7 +36,8 @@
       "src/**/*.{js,jsx}",
       "!**/node_modules/**",
       "!**/.{snap}*",
-      "!src/vendor.js"
+      "!src/vendor.js",
+      "!src/**/select-styles.js"
     ],
     "coverageReporters": [
       "text",
