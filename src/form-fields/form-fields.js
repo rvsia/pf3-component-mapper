@@ -6,7 +6,7 @@ import { componentTypes } from '@data-driven-forms/react-form-renderer';
 import { validationError } from './helpers';
 import MultipleChoiceList from './multiple-choice-list';
 import customStyles from './select-styles';
-import requiredLabel from './required-label';
+import RequiredLabel from './required-label';
 import Switch from './switch-field';
 import './react-select.scss';
 
@@ -90,7 +90,7 @@ const FinalFormField = ({
     <FormGroup validationState={ invalid ? 'error' : null }>
       { label &&
           <Col md={ hideLabel ? 0 : 2 } componentClass="label" className="control-label">
-            { !hideLabel && (rest.isRequired ? requiredLabel(label) : label) }
+            { !hideLabel && (rest.isRequired ? <RequiredLabel label={ label } /> : label) }
           </Col> }
       <Col md={ !label ? 12 : 10 }>
         { selectComponent({ ...rest, invalid, label })() }
