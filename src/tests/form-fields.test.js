@@ -29,6 +29,20 @@ describe('FormFields', () => {
       expect(toJson(wrapper)).toMatchSnapshot();
     });
 
+    it('should render mini Switch correctly', () => {
+      const wrapper = mount(
+        <SwitchField { ...props } bsSize='mini' />
+      );
+      expect(toJson(wrapper)).toMatchSnapshot();
+    });
+
+    it('should render sm Switch correctly', () => {
+      const wrapper = mount(
+        <SwitchField { ...props } bsSize='mn' />
+      );
+      expect(toJson(wrapper)).toMatchSnapshot();
+    });
+
     it('should render Switch with label correctly', () => {
       const wrapper = mount(
         <SwitchField { ...props } label={ 'Label' } />
@@ -39,13 +53,6 @@ describe('FormFields', () => {
     it('should render Switch with placeholder correctly', () => {
       const wrapper = mount(
         <SwitchField { ...props } placeholder={ 'Placeholder' } />
-      );
-      expect(toJson(wrapper)).toMatchSnapshot();
-    });
-
-    it('should render Switch with labelText correctly', () => {
-      const wrapper = mount(
-        <SwitchField { ...props } labelText={ 'labelText' } />
       );
       expect(toJson(wrapper)).toMatchSnapshot();
     });
@@ -225,19 +232,5 @@ describe('FormFields', () => {
       const wrapper = mount(<TextareaField { ...initialProps } />);
       expect(toJson(wrapper)).toMatchSnapshot();
     });
-  });
-
-  it('should render small Switch correctly', () => {
-    const wrapper = mount(
-      <SwitchField { ...props } bsSize='mini' FieldProvider={ FieldProvider } />
-    );
-    expect(toJson(wrapper)).toMatchSnapshot();
-  });
-
-  it('should render sm Switch correctly', () => {
-    const wrapper = mount(
-      <SwitchField { ...props } bsSize='mn' FieldProvider={ FieldProvider } />
-    );
-    expect(toJson(wrapper)).toMatchSnapshot();
   });
 });

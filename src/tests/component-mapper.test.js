@@ -1,4 +1,3 @@
-
 import { componentTypes } from '@data-driven-forms/react-form-renderer';
 import { TextField, TextareaField, SelectField, CheckboxGroup, Radio, SwitchField } from '../form-fields/form-fields';
 import componentMapper from '../form-fields/component-mapper';
