@@ -347,6 +347,32 @@ const output = {
                     },
                   ],
                 },
+                {
+                  name: 'select_clear',
+                  label: 'Clearable dropdown',
+                  title: 'Clearable dropdown',
+                  component: components.SELECT_COMPONENT,
+                  multi: true,
+                  isClearable: true,
+                  options: [
+                    {
+                      label: '<None>',
+                      value: null,
+                    },
+                    {
+                      label: 'One',
+                      value: '1',
+                    },
+                    {
+                      label: 'Three',
+                      value: '3',
+                    },
+                    {
+                      label: 'Two',
+                      value: '2',
+                    },
+                  ],
+                },
               ],
               component: components.SUB_FORM,
             },
