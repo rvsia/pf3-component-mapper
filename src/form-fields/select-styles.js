@@ -125,6 +125,10 @@ const customStyles = {
     fontWeight: '600',
     color: 'rgb(54, 54, 54)',
   }),
+  clearIndicator: (provided) => ({
+    ...provided,
+    padding: 0,
+  }),
 };
 
 export default customStyles;
