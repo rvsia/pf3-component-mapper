@@ -8,6 +8,7 @@ import { schema, uiSchema, conditionalSchema, arraySchema, uiArraySchema } from 
 import miqSchema from './demo-schemas/miq-schema';
 import sandbox from './demo-schemas/sandbox';
 import Switch from "../src/form-fields/switch-field";
+import PickerWrapper from "../src/form-fields/date-time-picker";
 
 class App extends React.Component {
   render() {
@@ -15,6 +16,9 @@ class App extends React.Component {
     <div>
       <h1>Pf3 component mapper</h1>
       <Grid>
+        <Row>
+          <PickerWrapper />
+        </Row>
         <Row>
           <FormRenderer
             onSubmit={console.log}
