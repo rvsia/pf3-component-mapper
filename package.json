@@ -79,7 +79,7 @@
     "jest": "^23.6.0",
     "mini-css-extract-plugin": "^0.4.4",
     "node-sass": "^4.10.0",
-    "patternfly-react": "^2.25.4",
+    "patternfly-react": "^2.28.2",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
