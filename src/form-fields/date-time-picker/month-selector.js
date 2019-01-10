@@ -24,10 +24,25 @@ const renderMonthBody = (monthChange, selectedMonth, locale) => {
   ));
 };
 
-const MonthSelector = ({ monthChange, toggleSelectingMonth, selectingMonth, month, toggleSelectingYear, selectedDay, locale }) => (
+const MonthSelector = ({
+  monthChange,
+  toggleSelectingMonth,
+  selectingMonth,
+  toggleSelectingYear,
+  selectedDay,
+  locale,
+  onNextClick,
+  onPreviousClick,
+}) => (
   <div className="DayPicker">
     <div className="DayPicker-wrapper" tabIndex="0">
-      <Navbar month={ month || new Date() } isYear={ selectingMonth } toggleSelectingYear={ toggleSelectingYear }/>
+      <Navbar
+        onNextClick={ onNextClick }
+        onPreviousClick={ onPreviousClick }
+        month={ selectedDay || new Date() }
+        isYear={ selectingMonth }
+        toggleSelectingYear={ toggleSelectingYear }
+      />
       <table className="pf3-datetime-months-table">
         <tbody>
           { renderMonthBody(month => {
@@ -45,10 +60,11 @@ MonthSelector.propTypes = {
   monthChange: PropTypes.func.isRequired,
   toggleSelectingMonth: PropTypes.func.isRequired,
   selectingMonth: PropTypes.bool,
-  month: PropTypes.instanceOf(Date),
   toggleSelectingYear: PropTypes.func,
   selectedDay: PropTypes.instanceOf(Date),
   locale: PropTypes.string,
+  onNextClick: PropTypes.func.isRequired,
+  onPreviousClick: PropTypes.func.isRequired,
 };
 
 export default MonthSelector;

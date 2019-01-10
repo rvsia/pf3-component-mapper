@@ -45,6 +45,8 @@ const PopoverRoot = ({
                     toggleSelectingMonth={ toggleSelectingMonth }
                     toggleSelectingYear={ toggleSelectingYear }
                     locale={ locale }
+                    onNextClick={ () => yearChange(selectedDay ? selectedDay.getFullYear() + 1 : new Date().getFullYear() + 1) }
+                    onPreviousClick={ () => yearChange(selectedDay ? selectedDay.getFullYear() - 1 : new Date().getFullYear() - 1) }
                   />)
                 :
                 <DayPicker
