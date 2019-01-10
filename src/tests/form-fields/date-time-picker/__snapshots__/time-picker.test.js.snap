@@ -4,7 +4,7 @@ exports[`<TimePicker /> should render correcntly 1`] = `
 <TimePicker
   onHourChange={[MockFunction]}
   onMinuteChange={[MockFunction]}
-  selectedDay={2018-12-17T02:24:00.000Z}
+  selectedDay={2019-01-17T03:24:00.000Z}
 >
   <table
     className="time-picker-layout-wrapper"
@@ -58,7 +58,7 @@ exports[`<TimePicker /> should render correcntly 1`] = `
               min={0}
               onChange={[Function]}
               type="number"
-              value="03"
+              value="04"
             />
           </span>
         </td>
