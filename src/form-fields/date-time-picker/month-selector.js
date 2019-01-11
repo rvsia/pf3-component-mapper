@@ -2,11 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import MomentLocaleUtils from 'react-day-picker/moment';
 import Navbar from './navbar';
+import { computeTextWidth } from '../../helpers/html-helper';
 import './date-picker-styles.scss';
+
+const LABEL_PADDING = 14;
 
 const renderMonthBody = (monthChange, selectedMonth, locale) => {
   const rows = [];
   const months = MomentLocaleUtils.getMonths(locale);
+  const maxLength = computeTextWidth(months.reduce((prev, curr) => curr.length > prev.length ? curr : prev, ''));
   for (let i = 0; i < 4; i++) {
     rows.push([ ...months.slice(i * 3, i * 3 + 3) ]);
   }
@@ -14,7 +18,7 @@ const renderMonthBody = (monthChange, selectedMonth, locale) => {
   return rows.map((row, index) => (
     <tr key={ `month-row-${index}` }>
       { row.map((cell, monthIndex) => (
-        <td key={ `months-cell-${cell}` }>
+        <td key={ `months-cell-${cell}` } style={{ width: maxLength + LABEL_PADDING }}>
           <button className={ selectedMonth === index * 3 + monthIndex ? 'selected' : '' } onClick={ () => {
             monthChange(index * 3 + monthIndex);
           } }>{ cell }</button>
