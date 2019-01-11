@@ -27,7 +27,7 @@ const PickerInput = ({ variant, selectedDay, locale, handleOverlayToggle, isDisa
 );
 
 PickerInput.propTypes = {
-  variant: PropTypes.oneOf([ 'date-time', 'date' ]),
+  variant: PropTypes.oneOf([ 'date-time', 'date', 'time' ]),
   selectedDay: PropTypes.instanceOf(Date),
   locale: PropTypes.string,
   handleOverlayToggle: PropTypes.func.isRequired,
