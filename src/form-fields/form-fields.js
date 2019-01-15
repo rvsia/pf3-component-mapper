@@ -8,6 +8,7 @@ import MultipleChoiceList from './multiple-choice-list';
 import customStyles from './select-styles';
 import RequiredLabel from './required-label';
 import Switch from './switch-field';
+import { DateTimePicker } from './date-time-picker/date-time-picker';
 import './react-select.scss';
 
 const selectValue = option => option.sort((a, b) => a.label.localeCompare(b.label, 'en', { sensitivity: 'base' })).map(item => item.value);
@@ -69,6 +70,7 @@ const selectComponent = ({
       checked={ input.value }
       onChange={ ({ target: { checked }}) => input.onChange(checked) }
     />,
+  [componentTypes.DATE_PICKER]: () => <DateTimePicker onChange={ input.onChange } isDisabled={ isDisabled } { ...rest } />,
 })[componentType];
 
 const renderHelperText = (error, helperText) => (error // eslint-disable-line no-nested-ternary
@@ -124,6 +126,7 @@ const fieldMapper = type => ({
   [componentTypes.TEXTAREA_FIELD]: FinalFormField,
   [componentTypes.TEXT_FIELD]: FinalFormField,
   [componentTypes.SWITCH]: FinalFormField,
+  [componentTypes.DATE_PICKER]: FinalFormField,
 })[type];
 
 const FieldInterface = ({
@@ -154,6 +157,7 @@ FieldInterface.propTypes = {
     componentTypes.TEXTAREA_FIELD,
     componentTypes.TEXT_FIELD,
     componentTypes.SWITCH,
+    componentTypes.DATE_PICKER,
   ]).isRequired,
   id: PropTypes.string,
   name: PropTypes.string.isRequired,
@@ -168,3 +172,5 @@ export const Radio = props => <FieldInterface { ...props } name={ props.input.na
 export const CheckboxGroup = props => <FieldInterface { ...props } name={ props.input.name } componentType={ componentTypes.CHECKBOX } />;
 export const SwitchField = ({ FieldProvider, ...props }) =>
   <FieldProvider { ...props } render={ props => <FieldInterface { ...props } name={ props.input.name } componentType={ componentTypes.SWITCH } /> }/>;
+export const DatePickerField = props =>
+  <FieldInterface { ...props } name={ props.input.name } variant={ props.variant } componentType={ componentTypes.DATE_PICKER } />;
