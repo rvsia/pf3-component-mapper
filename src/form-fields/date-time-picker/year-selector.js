@@ -27,17 +27,36 @@ YearIntervalSelector.propTypes = {
   nextInterval: PropTypes.func.isRequired,
 };
 
-const renderYearsBody = (startingYear, yearClick, currentYear) => {
+const checkDisableYear = (after, before, year) => {
+  if (after) {
+    const afterYear = after.getFullYear();
+    if (year > afterYear) {
+      return true;
+    }
+
+  }
+
+  if (before) {
+    const beforeYear = before.getFullYear();
+    if (year < beforeYear) {
+      return true;
+    }
+  }
+};
+
+const renderYearsBody = (startingYear, yearClick, currentYear, disabledDays) => {
   const rows = [];
   for (let i = 0; i < 4; i++) {
     rows.push([ 0, 1, 2, 3, 4 ]);
   }
 
+  const { after, before } = disabledDays.find(item => typeof item === 'object' && !(item instanceof Date)) || {};
   return rows.map((row, index) => (
     <tr key={ `year-row-${index}` }>
       { row.map(year => (
-        <td key={ `year-cell-${year}` }>
+        <td key={ `year-cell-${year}` } className={ checkDisableYear(after, before, startingYear + index * 5 + year) ? 'disabled' : '' }>
           <button
+            disabled={ checkDisableYear(after, before, startingYear + index * 5 + year) }
             className={ startingYear + index * 5 + year === currentYear ? 'selected' : '' }
             onClick={ () => yearClick(startingYear + index * 5 + year) }
           >
@@ -63,7 +82,7 @@ class YearSelector  extends React.Component {
 
   handlePrevInterval = () => this.setState(({ currentInterval }) => ({ currentInterval: [ currentInterval[0] - 20, currentInterval[0] - 1 ]}))
   render() {
-    const { toggleSelectingYear, yearChange, selectedDay } = this.props;
+    const { toggleSelectingYear, yearChange, selectedDay, disabledDays } = this.props;
     const { currentInterval } = this.state;
     const years = [];
     for (let year = currentInterval[0]; year < currentInterval[1]; year++) {
@@ -84,7 +103,7 @@ class YearSelector  extends React.Component {
                 { renderYearsBody(currentInterval[0], year => {
                   yearChange(year);
                   toggleSelectingYear(false);
-                }, selectedDay && selectedDay.getFullYear()) }
+                }, selectedDay && selectedDay.getFullYear(), disabledDays) }
               </tbody>
             </table>
           </div>
@@ -98,6 +117,11 @@ YearSelector.propTypes = {
   toggleSelectingYear: PropTypes.func,
   yearChange: PropTypes.func,
   selectedDay: PropTypes.instanceOf(Date),
+  disabledDays: PropTypes.array,
+};
+
+YearSelector.defaultProps = {
+  disabledDays: [],
 };
 
 export default YearSelector;

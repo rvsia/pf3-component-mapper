@@ -95,6 +95,17 @@
       }
     }
     td:first-child, td:last-child {
+      &.disabled {
+        background-color: #ededed;
+        background-image: none;
+        border-color: #8b8d8f;
+        color: #8b8d8f;
+        outline: 0;
+        border-radius: 0;
+        cursor: not-allowed;
+      }
+    }
+    td:first-child, td:last-child {
       color: #4d5258;
       width: 40px;
       padding: 5px;
@@ -243,6 +254,15 @@
     text-align: center;
     padding: 0;
     box-sizing: border-box;
+    td.disabled {
+      background-color: #ededed;
+      background-image: none;
+      border-color: #8b8d8f;
+      color: #8b8d8f;
+      outline: 0;
+      border-radius: 0;
+      cursor: not-allowed;
+    }
     button {
       background: none;
       width: 100%;
@@ -286,6 +306,18 @@
         color: #4d5258;
         box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
         outline: 0;
+      }
+      &.disabled {
+        background-color: #ededed;
+        background-image: none;
+        border-color: #8b8d8f;
+        color: #8b8d8f;
+        outline: 0;
+        border-radius: 0;
+        cursor: not-allowed;
+        button {
+          pointer-events: none;
+        }
       }
     }
   }

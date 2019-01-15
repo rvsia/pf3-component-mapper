@@ -4,11 +4,11 @@ import { Icon } from 'patternfly-react';
 import MomentLocaleUtils from 'react-day-picker/moment';
 import './date-picker-styles.scss';
 
-const Navbar = ({ onNextClick, onPreviousClick, month, onMonthClick, isYear, toggleSelectingYear, locale }) => (
+const Navbar = ({ onNextClick, onPreviousClick, month, onMonthClick, isYear, toggleSelectingYear, locale, disablePrev, disableNext }) => (
   <table className="year-interval-header">
     <tbody>
       <tr>
-        <td onClick={ () => onPreviousClick() }>
+        <td className={ disablePrev ? 'disabled' : '' } onClick={ () => !disablePrev && onPreviousClick() }>
           <Icon name="angle-left"><span>Prev interval</span></Icon>
         </td>
         <td>
@@ -23,7 +23,7 @@ const Navbar = ({ onNextClick, onPreviousClick, month, onMonthClick, isYear, tog
               </button>
             ) }
         </td>
-        <td onClick={ () => onNextClick() }>
+        <td className={ disableNext ? 'disabled' : '' } onClick={ () =>!disableNext &&  onNextClick() }>
           <Icon name="angle-right" ><span>Next interval</span></Icon>
         </td>
       </tr>
@@ -39,6 +39,8 @@ Navbar.propTypes = {
   isYear: PropTypes.bool,
   toggleSelectingYear: PropTypes.func,
   locale: PropTypes.string,
+  disableNext: PropTypes.bool,
+  disablePrev: PropTypes.bool,
 };
 
 export default Navbar;

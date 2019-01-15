@@ -4,6 +4,19 @@ import PropTypes from 'prop-types';
 import PickerInput from './picker-input';
 import PopoverRoot from './popover-root';
 
+const selectValidDate = (newDate, disabledDays) => {
+  const { after, before } = disabledDays.find(item => typeof item === 'object' && !(item instanceof Date)) || {};
+  if (before && newDate < before) {
+    newDate = before;
+  }
+
+  if (after && newDate > after) {
+    newDate = after;
+  }
+
+  return newDate;
+};
+
 export class DateTimePicker extends React.Component {
   constructor(props) {
     super(props);
@@ -37,11 +50,23 @@ export class DateTimePicker extends React.Component {
   }), () => this.props.onChange(this.state.selectedDay));
 
   handleYearChange = year => this.setState(({ selectedDay = new Date() }) => ({
-    selectedDay: new Date(year, selectedDay.getMonth(), selectedDay.getDate(), selectedDay.getHours(), selectedDay.getMinutes()),
+    selectedDay: selectValidDate(new Date(
+      year,
+      selectedDay.getMonth(),
+      selectedDay.getDate(),
+      selectedDay.getHours(),
+      selectedDay.getMinutes()
+    ), this.props.disabledDays),
   }), () => this.props.onChange(this.state.selectedDay))
 
   handleMonthChange = month => this.setState(({ selectedDay = new Date() }) => ({
-    selectedDay: new Date(selectedDay.getFullYear(), month, selectedDay.getDate(), selectedDay.getHours(), selectedDay.getMinutes()),
+    selectedDay: selectValidDate(new Date(
+      selectedDay.getFullYear(),
+      month,
+      selectedDay.getDate(),
+      selectedDay.getHours(),
+      selectedDay.getMinutes()
+    ), this.props.disabledDays),
   }), () => this.props.onChange(this.state.selectedDay));
 
   toggleSelectingMonth = selectingMonth => this.setState({ selectingMonth })
@@ -127,13 +152,7 @@ DateTimePicker.propTypes = {
   todayButtonLabel: PropTypes.string,
   showTodayButton: PropTypes.bool,
   isDisabled: PropTypes.bool,
-  disabledDays: PropTypes.arrayOf(PropTypes.oneOf([
-    PropTypes.instanceOf(Date),
-    PropTypes.shape({
-      before: PropTypes.instanceOf(Date),
-      after: PropTypes.instanceOf(Date),
-    }),
-  ])),
+  disabledDays: PropTypes.array,
   value: PropTypes.instanceOf(Date),
   closeOnDaySelect: PropTypes.bool,
   onChange: PropTypes.func.isRequired,
@@ -147,6 +166,6 @@ DateTimePicker.defaultProps = {
   todayButtonLabel: 'Today',
   closeOnDaySelect: false,
   isDisabled: false,
-  disabledDays: [],
+  disabledDays: [{}],
 };
 

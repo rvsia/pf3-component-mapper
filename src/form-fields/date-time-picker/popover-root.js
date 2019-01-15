@@ -33,12 +33,18 @@ const PopoverRoot = ({
         <tr>
           <td>
             { selectingYear ?
-              <YearSelector selectedDay={ selectedDay } toggleSelectingYear={ toggleSelectingYear } yearChange={ yearChange } />
+              <YearSelector
+                selectedDay={ selectedDay }
+                toggleSelectingYear={ toggleSelectingYear }
+                yearChange={ yearChange }
+                disabledDays={ disabledDays }
+              />
               : selectingMonth
                 ? (
                   <MonthSelector
                     selectingMonth={ selectingMonth }
                     selectedDay={ selectedDay }
+                    disabledDays={ disabledDays }
                     monthChange={ data => {
                       monthChange(data);
                     } }
@@ -104,13 +110,7 @@ PopoverRoot.propTypes = {
   onMinuteChange: PropTypes.func.isRequired,
   todayButtonLabel: PropTypes.string,
   showTodayButton: PropTypes.bool,
-  disabledDays: PropTypes.arrayOf(PropTypes.oneOf([
-    PropTypes.instanceOf(Date),
-    PropTypes.shape({
-      before: PropTypes.instanceOf(Date),
-      after: PropTypes.instanceOf(Date),
-    }),
-  ])),
+  disabledDays: PropTypes.array,
 };
 
 export default PopoverRoot;
