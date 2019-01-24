@@ -11,6 +11,8 @@ const MultipleChoiceList = ({ validate, FieldProvider, ...props }) => (
       helperText,
       meta,
       options,
+      isDisabled,
+      isReadOnly,
       ...rest
     }) => {
       const { error, touched } = meta;
@@ -36,6 +38,7 @@ const MultipleChoiceList = ({ validate, FieldProvider, ...props }) => (
                       aria-label={ option['aria-label'] || option.label }
                       { ...input }
                       { ...rest }
+                      disabled={ isDisabled || isReadOnly }
                       onChange={ () => (indexValue === -1
                         ? input.onChange([ ...groupValues, input.value ])
                         : input.onChange([ ...groupValues.slice(0, indexValue), ...groupValues.slice(indexValue + 1) ])) }

@@ -1392,6 +1392,64 @@ exports[`FormFields <TextField /> should render correctly 1`] = `
 </TextField>
 `;
 
+exports[`FormFields <TextField /> should render correctly with placeholder 1`] = `
+<TextField
+  input={
+    Object {
+      "name": "text-field",
+    }
+  }
+  meta={Object {}}
+  placeholder="placeholder"
+>
+  <FieldInterface
+    componentType="text-field"
+    input={
+      Object {
+        "name": "text-field",
+      }
+    }
+    meta={Object {}}
+    name="text-field"
+    placeholder="placeholder"
+  >
+    <FormGroup
+      bsClass="form-group"
+      validationState={null}
+    >
+      <div
+        className="form-group"
+      >
+        <Col
+          bsClass="col"
+          componentClass="div"
+          md={12}
+        >
+          <div
+            className="col-md-12"
+          >
+            <FormControl
+              bsClass="form-control"
+              componentClass="input"
+              id="text-field"
+              name="text-field"
+              placeholder="placeholder"
+            >
+              <input
+                className="form-control"
+                id="text-field"
+                name="text-field"
+                placeholder="placeholder"
+              />
+            </FormControl>
+          </div>
+        </Col>
+      </div>
+    </FormGroup>
+  </FieldInterface>
+</TextField>
+`;
+
 exports[`FormFields <TextareaField /> should render correctly 1`] = `
 <TextareaField
   input={
@@ -1436,6 +1494,64 @@ exports[`FormFields <TextareaField /> should render correctly 1`] = `
                 className="form-control"
                 id="textarea-field"
                 name="textarea-field"
+              />
+            </FormControl>
+          </div>
+        </Col>
+      </div>
+    </FormGroup>
+  </FieldInterface>
+</TextareaField>
+`;
+
+exports[`FormFields <TextareaField /> should render correctly with placeholder 1`] = `
+<TextareaField
+  input={
+    Object {
+      "name": "textarea-field",
+    }
+  }
+  meta={Object {}}
+  placeholder="placeholder"
+>
+  <FieldInterface
+    componentType="textarea-field"
+    input={
+      Object {
+        "name": "textarea-field",
+      }
+    }
+    meta={Object {}}
+    name="textarea-field"
+    placeholder="placeholder"
+  >
+    <FormGroup
+      bsClass="form-group"
+      validationState={null}
+    >
+      <div
+        className="form-group"
+      >
+        <Col
+          bsClass="col"
+          componentClass="div"
+          md={12}
+        >
+          <div
+            className="col-md-12"
+          >
+            <FormControl
+              bsClass="form-control"
+              componentClass="textarea"
+              id="textarea-field"
+              name="textarea-field"
+              placeholder="placeholder"
+            >
+              <textarea
+                className="form-control"
+                id="textarea-field"
+                name="textarea-field"
+                placeholder="placeholder"
               />
             </FormControl>
           </div>

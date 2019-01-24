@@ -215,6 +215,11 @@ describe('FormFields', () => {
       const wrapper = mount(<TextField { ...initialProps } />);
       expect(toJson(wrapper)).toMatchSnapshot();
     });
+
+    it('should render correctly with placeholder', () => {
+      const wrapper = mount(<TextField { ...initialProps } placeholder={ 'placeholder' } />);
+      expect(toJson(wrapper)).toMatchSnapshot();
+    });
   });
 
   describe('<TextareaField />', () => {
@@ -230,6 +235,11 @@ describe('FormFields', () => {
 
     it('should render correctly', () => {
       const wrapper = mount(<TextareaField { ...initialProps } />);
+      expect(toJson(wrapper)).toMatchSnapshot();
+    });
+
+    it('should render correctly with placeholder', () => {
+      const wrapper = mount(<TextareaField { ...initialProps } placeholder={ 'placeholder' } />);
       expect(toJson(wrapper)).toMatchSnapshot();
     });
   });
