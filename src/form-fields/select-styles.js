@@ -12,10 +12,10 @@ const customStyles = {
     fontWeight: '600',
     color: 'rgb(54, 54, 54)',
   }),
-  placeholder: provided => ({
+  placeholder: (provided, { isDisabled }) => ({
     ...provided,
     padding: '0 6px',
-    color: 'rgb(77, 82, 88)',
+    color: isDisabled ? 'rgba(77, 82, 88, 0.4)' : 'rgb(77, 82, 88)',
     fontWeight: '600',
     paddingLeft: 0,
     marginLeft: 0,
@@ -37,11 +37,12 @@ const customStyles = {
       float: isMulti ? 'right' : 'initial',
     },
   }),
-  dropdownIndicator: provided => ({
+  dropdownIndicator: (provided, { isDisabled }) => ({
     ...provided,
     color: 'rgb(77, 82, 88)',
     padding: 0,
     paddingRight: 8,
+    display: isDisabled ? 'none' : 'initial',
   }),
   container: provided => ({
     ...provided,
@@ -51,13 +52,13 @@ const customStyles = {
     border: '1px solid transparent',
     'border-color': 'rgb(187, 187, 187)',
   }),
-  singleValue: (provided, { selectProps: { isSearchable }}) => ({
+  singleValue: (provided, { isDisabled }) => ({
     ...provided,
     minHeight: 20,
     'font-size': 12,
     marginLeft: 0,
     fontWeight: '600',
-    color: 'rgb(54, 54, 54)',
+    color: isDisabled ? 'rgba(54, 54, 54, 0.4)' : 'rgb(54, 54, 54)',
   }),
   menu: provided => ({
     ...provided,
@@ -90,7 +91,7 @@ const customStyles = {
       color: '#4d5258',
     },
   }),
-  multiValue: provided => ({
+  multiValue: (provided, { isDisabled }) => ({
     ...provided,
     background: 'transparent',
     paddigTop: 0,
@@ -107,7 +108,7 @@ const customStyles = {
         paddingLeft: 0,
         paddingRight: 0,
         fontWeight: '600',
-        color: 'rgb(54, 54, 54)',
+        color: isDisabled ? 'rgba(54, 54, 54, 0.4)' : 'rgb(54, 54, 54)',
       },
     },
   }),
@@ -115,7 +116,7 @@ const customStyles = {
     display: 'none',
     padding: 0,
   }),
-  multiValueLabel: (provided, state) => ({
+  multiValueLabel: (provided, { isDisabled }) => ({
     ...provided,
     'font-size': 12,
     padding: 0,
@@ -123,7 +124,7 @@ const customStyles = {
     marginTop: 0,
     marginBottom: 0,
     fontWeight: '600',
-    color: 'rgb(54, 54, 54)',
+    color: isDisabled ? 'rgba(54, 54, 54, 0.4)' : 'rgb(54, 54, 54)',
   }),
   clearIndicator: (provided) => ({
     ...provided,

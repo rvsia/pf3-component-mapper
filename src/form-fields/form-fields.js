@@ -29,10 +29,11 @@ const selectComponent = ({
   formOptions,
   ...rest
 }) => ({
-  [componentTypes.TEXT_FIELD]: () => <FormControl { ...input } disabled={ isDisabled } readOnly={ isReadOnly } { ...rest } />,
+  [componentTypes.TEXT_FIELD]: () =>
+    <FormControl { ...input } placeholder={ placeholder } disabled={ isDisabled } readOnly={ isReadOnly } { ...rest } />,
   [componentTypes.TEXTAREA_FIELD]: () =>
-    <FormControl { ...input } disabled={ isDisabled } readOnly={ isReadOnly } { ...rest } componentClass="textarea" />,
-  [componentTypes.CHECKBOX]: () => <Checkbox { ...input }>{ label }</Checkbox>,
+    <FormControl { ...input } disabled={ isDisabled } readOnly={ isReadOnly } { ...rest } componentClass="textarea" placeholder={ placeholder }/>,
+  [componentTypes.CHECKBOX]: () => <Checkbox { ...input } disabled={ isDisabled || isReadOnly }>{ label }</Checkbox>,
   [componentTypes.RADIO]: () => options.map(option => (
     <FieldProvider
       key={ `${input.name}-${option.value}` }
@@ -40,7 +41,7 @@ const selectComponent = ({
       value={ option.value }
       type="radio"
       render={ ({ input }) => (
-        <PfRadio { ...input } onChange={ () => { input.onChange(option.value); } }>{ option.label }</PfRadio>) }
+        <PfRadio { ...input } onChange={ () => { input.onChange(option.value); } } disabled={ isDisabled || isReadOnly }>{ option.label }</PfRadio>) }
     />
   )),
   [componentTypes.SELECT_COMPONENT]: () => (
@@ -57,6 +58,7 @@ const selectComponent = ({
       hideSelectedOptions={ false }
       closeMenuOnSelect={ !rest.multi }
       noOptionsMessage={ () => 'No option found' }
+      isDisabled={ isDisabled || isReadOnly }
       onChange={ option =>
         input.onChange(rest.multi ? selectValue(option) : option ? option.value : undefined) } // eslint-disable-line no-nested-ternary
       { ...rest }
