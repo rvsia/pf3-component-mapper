@@ -1,6 +1,7 @@
 import React from 'react';
 import { layoutComponents } from '@data-driven-forms/react-form-renderer';
-import { Col, FormGroup, Button, ButtonGroup, Icon, HelpBlock, Form } from 'patternfly-react';
+import { Col, FormGroup, ButtonGroup, Icon, HelpBlock, Form } from 'patternfly-react';
+import Button from './button';
 
 const ArrayFieldWrapper = ({ children }) => (
   <div style={{
