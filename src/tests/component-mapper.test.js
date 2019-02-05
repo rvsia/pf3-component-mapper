@@ -3,6 +3,7 @@ import { TextField, TextareaField, SelectField, CheckboxGroup, Radio, SwitchFiel
 import componentMapper from '../form-fields/component-mapper';
 import SubForm from '../form-fields/sub-form';
 import FormTabs from '../form-fields/tabs';
+import Wizard from '../form-fields/wizzard/wizzard';
 
 describe('Component mapper', () => {
   it('should return TextField component', () => {
@@ -35,5 +36,9 @@ describe('Component mapper', () => {
 
   it('should return SwitchField component', () => {
     expect(componentMapper[componentTypes.SWITCH]).toEqual(SwitchField);
+  });
+
+  it('should return Wizard component', () => {
+    expect(componentMapper[componentTypes.WIZARD]).toEqual(Wizard);
   });
 });

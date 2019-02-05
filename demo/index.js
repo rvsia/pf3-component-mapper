@@ -6,6 +6,7 @@ import { Grid, Row } from 'patternfly-react';
 import { formFieldsMapper, layoutMapper } from '../src'
 import { schema, uiSchema, conditionalSchema, arraySchema, uiArraySchema } from './demo-schemas/widget-schema';
 import miqSchema from './demo-schemas/miq-schema';
+import wizardSchema from './demo-schemas/wizard-schema';
 import sandbox from './demo-schemas/sandbox';
 import Switch from "../src/form-fields/switch-field";
 
