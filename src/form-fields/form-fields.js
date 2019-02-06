@@ -27,13 +27,14 @@ const selectComponent = ({
   FieldProvider,
   labelText,
   formOptions,
+  noCheckboxLabel,
   ...rest
 }) => ({
   [componentTypes.TEXT_FIELD]: () =>
     <FormControl { ...input } placeholder={ placeholder } disabled={ isDisabled } readOnly={ isReadOnly } { ...rest } />,
   [componentTypes.TEXTAREA_FIELD]: () =>
     <FormControl { ...input } disabled={ isDisabled } readOnly={ isReadOnly } { ...rest } componentClass="textarea" placeholder={ placeholder }/>,
-  [componentTypes.CHECKBOX]: () => <Checkbox { ...input } disabled={ isDisabled || isReadOnly }>{ label }</Checkbox>,
+  [componentTypes.CHECKBOX]: () => <Checkbox { ...input } disabled={ isDisabled || isReadOnly }>{ !noCheckboxLabel && label }</Checkbox>,
   [componentTypes.RADIO]: () => options.map(option => (
     <FieldProvider
       key={ `${input.name}-${option.value}` }
@@ -118,7 +119,7 @@ FinalFormField.propTypes = {
 const CheckboxGroupField = ({ options, ...rest }) =>
   (options ? <MultipleChoiceList options={ options } { ...rest } />
     : (
-      <FinalFormField { ...rest }/>
+      <FinalFormField { ...rest } noCheckboxLabel/>
     ));
 
 const fieldMapper = type => ({
