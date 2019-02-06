@@ -44,6 +44,7 @@ exports[`FormFields <CheckboxGroup /> should render single checkbox variant 1`] 
         }
         meta={Object {}}
         name="single-check-box"
+        noCheckboxLabel={true}
       >
         <FormGroup
           bsClass="form-group"
