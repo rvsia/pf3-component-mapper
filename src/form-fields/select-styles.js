@@ -15,10 +15,11 @@ const customStyles = {
   placeholder: (provided, { isDisabled }) => ({
     ...provided,
     padding: '0 6px',
-    color: isDisabled ? 'rgba(77, 82, 88, 0.4)' : 'rgb(77, 82, 88)',
+    color: isDisabled ? 'rgba(77, 82, 88, 0.4)' : '#999999',
     fontWeight: '600',
     paddingLeft: 0,
     marginLeft: 0,
+
   }),
   option: (provided, { isFocused, isSelected, isMulti }) => ({
     ...provided,
@@ -43,6 +44,12 @@ const customStyles = {
     padding: 0,
     paddingRight: 8,
     display: isDisabled ? 'none' : 'initial',
+    '&:hover': {
+      color: 'rgb(77, 82, 88)',
+    },
+    svg: {
+      paddingTop: 6,
+    },
   }),
   container: provided => ({
     ...provided,
@@ -129,6 +136,13 @@ const customStyles = {
   clearIndicator: (provided) => ({
     ...provided,
     padding: 0,
+    color: '#4d5258',
+    '&:hover': {
+      color: '#4d5258',
+    },
+    svg: {
+      height: 16,
+    },
   }),
 };
 
