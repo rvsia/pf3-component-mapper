@@ -50,7 +50,7 @@ const selectComponent = ({
       className={ `final-form-select ${invalid ? 'has-error' : ''}` }
       styles={ customStyles }
       { ...input }
-      options={options.filter(option => option.hasOwnProperty('value') && option.value !== null)} // eslint-disable-line
+      options={options} // eslint-disable-line
       placeholder={ placeholder || 'Please choose' }
       value={ options.filter(({ value }) => rest.multi ? input.value.includes(value) : value === input.value) }
       isMulti={ rest.multi }
