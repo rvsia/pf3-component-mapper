@@ -21,6 +21,8 @@ const layoutMapper = {
   [layoutComponents.ICON]: props => <Icon { ...props } />,
   [layoutComponents.ARRAY_FIELD_WRAPPER]: ArrayFieldWrapper,
   [layoutComponents.HELP_BLOCK]: HelpBlock,
+  [layoutComponents.TITLE]: ({children}) => <h3>{children}</h3>,
+  [layoutComponents.DESCRIPTION]: ({children}) => <p>{children}</p>,
 };
 
 export default layoutMapper;
