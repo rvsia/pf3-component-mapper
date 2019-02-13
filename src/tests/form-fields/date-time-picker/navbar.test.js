@@ -25,21 +25,21 @@ describe('<Navbar />', () => {
   it('should call previsouse click prop', () => {
     const onPreviousClick = jest.fn();
     const wrapper = mount(<Navbar { ...initialProps } onPreviousClick={ onPreviousClick } />);
-    wrapper.find('td').first().simulate('click');
+    wrapper.find('td').first().simulate('mousedown');
     expect(onPreviousClick).toHaveBeenCalled();
   });
 
   it('should call next click prop', () => {
     const onNextClick = jest.fn();
     const wrapper = mount(<Navbar { ...initialProps } onNextClick={ onNextClick } />);
-    wrapper.find('td').last().simulate('click');
+    wrapper.find('td').last().simulate('mousedown');
     expect(onNextClick).toHaveBeenCalled();
   });
 
   it('should call onMonthClick click prop', () => {
     const onMonthClick = jest.fn();
     const wrapper = mount(<Navbar { ...initialProps } onMonthClick={ onMonthClick } />);
-    wrapper.find('button.navbar-center-button').simulate('click');
+    wrapper.find('button.navbar-center-button').simulate('mousedown');
     expect(onMonthClick).toHaveBeenCalledWith(true);
   });
 
