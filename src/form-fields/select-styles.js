@@ -2,6 +2,10 @@ const customStyles = {
   indicatorSeparator: () => ({
     display: 'none',
   }),
+  indicatorsContainer: provided => ({
+    ...provided,
+    lineHeight: 0,
+  }),
   input: provided => ({
     ...provided,
     marginLeft: 0,
@@ -48,7 +52,7 @@ const customStyles = {
       color: 'rgb(77, 82, 88)',
     },
     svg: {
-      paddingTop: 6,
+      height: 16,
     },
   }),
   container: provided => ({
@@ -80,7 +84,7 @@ const customStyles = {
     border: 'none',
     transition: 'border-color ease-in-out .15s, box-shadow ease-in-out .15s',
     'box-shadow': '0 2px 3px rgba(3, 3, 3, 0.1)',
-    padding: '1px 0',
+    padding: 0,
     minHeight: 'initial',
     'background-color': '#f1f1f1',
     color: '#4d5258',
