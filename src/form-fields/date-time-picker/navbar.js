@@ -17,8 +17,8 @@ const Navbar = ({ onNextClick, onPreviousClick, month, onMonthClick, isYear, tog
             : (
               <button
                 className="navbar-center-button"
-                onMouseDown={ () => { onMonthClick(true);} }
-                type="button" onClick={ () => {} }
+                onMouseDown={ () => onMonthClick(true) }
+                type="button"
               >
                 { MomentLocaleUtils.formatMonthTitle(month, locale) }
               </button>
