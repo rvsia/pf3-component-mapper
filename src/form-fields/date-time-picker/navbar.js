@@ -8,7 +8,7 @@ const Navbar = ({ onNextClick, onPreviousClick, month, onMonthClick, isYear, tog
   <table className="year-interval-header">
     <tbody>
       <tr>
-        <td className={ disablePrev ? 'disabled' : '' } onClick={ () => !disablePrev && onPreviousClick() }>
+        <td className={ disablePrev ? 'disabled' : '' } onMouseDown={ () => !disablePrev && onPreviousClick() }>
           <Icon name="angle-left"><span>Prev interval</span></Icon>
         </td>
         <td>
@@ -17,13 +17,14 @@ const Navbar = ({ onNextClick, onPreviousClick, month, onMonthClick, isYear, tog
             : (
               <button
                 className="navbar-center-button"
-                type="button" onClick={ () => onMonthClick(true) }
+                onMouseDown={ () => { onMonthClick(true);} }
+                type="button" onClick={ () => {} }
               >
                 { MomentLocaleUtils.formatMonthTitle(month, locale) }
               </button>
             ) }
         </td>
-        <td className={ disableNext ? 'disabled' : '' } onClick={ () =>!disableNext &&  onNextClick() }>
+        <td className={ disableNext ? 'disabled' : '' } onMouseDown={ () =>!disableNext &&  onNextClick() }>
           <Icon name="angle-right" ><span>Next interval</span></Icon>
         </td>
       </tr>
