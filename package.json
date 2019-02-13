@@ -1,6 +1,6 @@
 {
   "name": "@data-driven-forms/pf3-component-mapper",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "description": "Patternfly 3 component mapper",
   "main": "dist/index.js",
   "scripts": {
@@ -55,7 +55,7 @@
     "@babel/plugin-syntax-dynamic-import": "^7.0.0",
     "@babel/preset-env": "^7.1.6",
     "@babel/preset-react": "^7.0.0",
-    "@data-driven-forms/react-form-renderer": "^1.5.5",
+    "@data-driven-forms/react-form-renderer": "^1.7.0",
     "@semantic-release/git": "^7.0.5",
     "@semantic-release/npm": "^5.1.1",
     "babel-core": "^7.0.0-bridge.0",
