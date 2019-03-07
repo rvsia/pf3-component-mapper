@@ -41,6 +41,7 @@ const selectComponent = ({
       name={ input.name }
       value={ option.value }
       type="radio"
+      formOptions={ formOptions }
       render={ ({ input }) => (
         <PfRadio { ...input } onChange={ () => { input.onChange(option.value); } } disabled={ isDisabled || isReadOnly }>{ option.label }</PfRadio>) }
     />
@@ -124,7 +125,7 @@ const CheckboxGroupField = ({ options, ...rest }) =>
 
 const fieldMapper = type => ({
   [componentTypes.RADIO]: FinalFormField,
-  [componentTypes.CHECKBOX]: props => <CheckboxGroupField { ...props } />,
+  [componentTypes.CHECKBOX]: CheckboxGroupField,
   [componentTypes.SELECT_COMPONENT]: FinalFormField,
   [componentTypes.TEXTAREA_FIELD]: FinalFormField,
   [componentTypes.TEXT_FIELD]: FinalFormField,

@@ -21,7 +21,7 @@ exports[`FormFields <CheckboxGroup /> should render single checkbox variant 1`] 
     meta={Object {}}
     name="single-check-box"
   >
-    <CheckboxGroupField
+    <FinalFormField
       FieldProvider={[Function]}
       componentType="checkbox"
       id="single-check-box"
@@ -32,62 +32,49 @@ exports[`FormFields <CheckboxGroup /> should render single checkbox variant 1`] 
       }
       meta={Object {}}
       name="single-check-box"
+      noCheckboxLabel={true}
     >
-      <FinalFormField
-        FieldProvider={[Function]}
-        componentType="checkbox"
-        id="single-check-box"
-        input={
-          Object {
-            "name": "single-check-box",
-          }
-        }
-        meta={Object {}}
-        name="single-check-box"
-        noCheckboxLabel={true}
+      <FormGroup
+        bsClass="form-group"
+        validationState={null}
       >
-        <FormGroup
-          bsClass="form-group"
-          validationState={null}
+        <div
+          className="form-group"
         >
-          <div
-            className="form-group"
+          <Col
+            bsClass="col"
+            componentClass="div"
+            md={12}
           >
-            <Col
-              bsClass="col"
-              componentClass="div"
-              md={12}
+            <div
+              className="col-md-12"
             >
-              <div
-                className="col-md-12"
+              <Checkbox
+                bsClass="checkbox"
+                disabled={false}
+                inline={false}
+                name="single-check-box"
+                title=""
               >
-                <Checkbox
-                  bsClass="checkbox"
-                  disabled={false}
-                  inline={false}
-                  name="single-check-box"
-                  title=""
+                <div
+                  className="checkbox"
                 >
-                  <div
-                    className="checkbox"
+                  <label
+                    title=""
                   >
-                    <label
-                      title=""
-                    >
-                      <input
-                        disabled={false}
-                        name="single-check-box"
-                        type="checkbox"
-                      />
-                    </label>
-                  </div>
-                </Checkbox>
-              </div>
-            </Col>
-          </div>
-        </FormGroup>
-      </FinalFormField>
-    </CheckboxGroupField>
+                    <input
+                      disabled={false}
+                      name="single-check-box"
+                      type="checkbox"
+                    />
+                  </label>
+                </div>
+              </Checkbox>
+            </div>
+          </Col>
+        </div>
+      </FormGroup>
+    </FinalFormField>
   </FieldInterface>
 </CheckboxGroup>
 `;

@@ -79,10 +79,17 @@ exports[`<MultipleChoiceList /> should render correctly 1`] = `
             >
               <FieldProvider
                 id="undefined-0"
+                input={
+                  Object {
+                    "onChange": [MockFunction],
+                    "value": Array [],
+                  }
+                }
                 key="0"
                 label="Foo"
                 render={[Function]}
                 type="checkbox"
+                validate={[Function]}
                 value={0}
               >
                 <MockFieldProvider
@@ -96,6 +103,7 @@ exports[`<MultipleChoiceList /> should render correctly 1`] = `
                   label="Foo"
                   render={[Function]}
                   type="checkbox"
+                  validate={[Function]}
                   value={0}
                 >
                   <Checkbox
@@ -108,6 +116,7 @@ exports[`<MultipleChoiceList /> should render correctly 1`] = `
                     onChange={[Function]}
                     title=""
                     type="checkbox"
+                    validate={[Function]}
                     value={0}
                   >
                     <div
@@ -123,6 +132,7 @@ exports[`<MultipleChoiceList /> should render correctly 1`] = `
                           label="Foo"
                           onChange={[Function]}
                           type="checkbox"
+                          validate={[Function]}
                           value={0}
                         />
                         Foo
@@ -133,10 +143,17 @@ exports[`<MultipleChoiceList /> should render correctly 1`] = `
               </FieldProvider>
               <FieldProvider
                 id="undefined-1"
+                input={
+                  Object {
+                    "onChange": [MockFunction],
+                    "value": Array [],
+                  }
+                }
                 key="1"
                 label="Bar"
                 render={[Function]}
                 type="checkbox"
+                validate={[Function]}
                 value={1}
               >
                 <MockFieldProvider
@@ -150,6 +167,7 @@ exports[`<MultipleChoiceList /> should render correctly 1`] = `
                   label="Bar"
                   render={[Function]}
                   type="checkbox"
+                  validate={[Function]}
                   value={1}
                 >
                   <Checkbox
@@ -162,6 +180,7 @@ exports[`<MultipleChoiceList /> should render correctly 1`] = `
                     onChange={[Function]}
                     title=""
                     type="checkbox"
+                    validate={[Function]}
                     value={1}
                   >
                     <div
@@ -177,6 +196,7 @@ exports[`<MultipleChoiceList /> should render correctly 1`] = `
                           label="Bar"
                           onChange={[Function]}
                           type="checkbox"
+                          validate={[Function]}
                           value={1}
                         />
                         Bar
@@ -279,10 +299,17 @@ exports[`<MultipleChoiceList /> should render in error state 1`] = `
             >
               <FieldProvider
                 id="undefined-0"
+                input={
+                  Object {
+                    "onChange": [MockFunction],
+                    "value": Array [],
+                  }
+                }
                 key="0"
                 label="Foo"
                 render={[Function]}
                 type="checkbox"
+                validate={[Function]}
                 value={0}
               >
                 <MockFieldProvider
@@ -302,6 +329,7 @@ exports[`<MultipleChoiceList /> should render in error state 1`] = `
                   }
                   render={[Function]}
                   type="checkbox"
+                  validate={[Function]}
                   value={0}
                 >
                   <Checkbox
@@ -314,6 +342,7 @@ exports[`<MultipleChoiceList /> should render in error state 1`] = `
                     onChange={[Function]}
                     title=""
                     type="checkbox"
+                    validate={[Function]}
                     value={0}
                   >
                     <div
@@ -329,6 +358,7 @@ exports[`<MultipleChoiceList /> should render in error state 1`] = `
                           label="Foo"
                           onChange={[Function]}
                           type="checkbox"
+                          validate={[Function]}
                           value={0}
                         />
                         Foo
@@ -339,10 +369,17 @@ exports[`<MultipleChoiceList /> should render in error state 1`] = `
               </FieldProvider>
               <FieldProvider
                 id="undefined-1"
+                input={
+                  Object {
+                    "onChange": [MockFunction],
+                    "value": Array [],
+                  }
+                }
                 key="1"
                 label="Bar"
                 render={[Function]}
                 type="checkbox"
+                validate={[Function]}
                 value={1}
               >
                 <MockFieldProvider
@@ -362,6 +399,7 @@ exports[`<MultipleChoiceList /> should render in error state 1`] = `
                   }
                   render={[Function]}
                   type="checkbox"
+                  validate={[Function]}
                   value={1}
                 >
                   <Checkbox
@@ -374,6 +412,7 @@ exports[`<MultipleChoiceList /> should render in error state 1`] = `
                     onChange={[Function]}
                     title=""
                     type="checkbox"
+                    validate={[Function]}
                     value={1}
                   >
                     <div
@@ -389,6 +428,7 @@ exports[`<MultipleChoiceList /> should render in error state 1`] = `
                           label="Bar"
                           onChange={[Function]}
                           type="checkbox"
+                          validate={[Function]}
                           value={1}
                         />
                         Bar
