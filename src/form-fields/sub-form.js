@@ -10,7 +10,7 @@ const SubForm = ({
   <Fragment>
     { title && <h3>{ title }</h3> }
     { description && <p>{ description }</p> }
-    { formOptions.renderForm(fields) }
+    { formOptions.renderForm(fields, formOptions) }
   </Fragment>
 );
 
