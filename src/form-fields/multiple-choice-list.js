@@ -26,7 +26,7 @@ const MultipleChoiceList = ({ validate, FieldProvider, ...props }) => (
           <Col md={ 10 }>
             { options.map(option =>
               (<FieldProvider
-                { ...rest }
+                formOptions={rest.formOptions}
                 id={ `${rest.id}-${option.value}` }
                 key={ option.value }
                 { ...option }

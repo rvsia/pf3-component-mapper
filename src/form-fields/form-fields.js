@@ -28,6 +28,8 @@ const selectComponent = ({
   labelText,
   formOptions,
   noCheckboxLabel,
+  assignFieldProvider,
+  initialValue,
   ...rest
 }) => ({
   [componentTypes.TEXT_FIELD]: () =>

@@ -153,6 +153,20 @@ const output = {
                   label: 'Check Box',
                   title: 'Check Box',
                   component: components.CHECKBOX,
+                  "options": [
+                    {
+                      "label": "Dog",
+                      "value": "1"
+                    },
+                    {
+                      "label": "Cats",
+                      "value": "2"
+                    },
+                    {
+                      "label": "Hamsters",
+                      "value": "3"
+                    }
+                  ]
                 },
                 {
                   name: 'check_box_2',
